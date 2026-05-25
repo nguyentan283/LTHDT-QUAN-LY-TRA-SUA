@@ -37,9 +37,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(282, 47);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(201, 46);
+            this.label1.Size = new System.Drawing.Size(395, 46);
             this.label1.TabIndex = 0;
-            this.label1.Text = "TRÀ SỮA";
+            this.label1.Text = "QUẢN LÝ TRÀ SỮA";
             // 
             // Form1
             // 

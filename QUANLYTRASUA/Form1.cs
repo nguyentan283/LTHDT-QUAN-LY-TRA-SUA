@@ -16,5 +16,10 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        public Giao_dien()
+        {
+            InitializeComponent();
+        }
     }
 }

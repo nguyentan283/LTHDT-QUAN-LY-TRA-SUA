@@ -21,5 +21,9 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+        public TAO()
+        {
+            InitializeComponent();
+        }
     }
 }

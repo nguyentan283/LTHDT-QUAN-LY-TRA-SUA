@@ -2,8 +2,10 @@ C:\Users\vanco\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\bin\Debug\WindowsFormsApp1.exe
 C:\Users\vanco\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\bin\Debug\WindowsFormsApp1.exe
 C:\Users\vanco\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\bin\Debug\WindowsFormsApp1.pdb
 C:\Users\vanco\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\vanco\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\obj\Debug\WindowsFormsApp1.Form1.resources
 C:\Users\vanco\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
 C:\Users\vanco\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
 C:\Users\vanco\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\vanco\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\obj\Debug\WindowsFormsApp1.exe
 C:\Users\vanco\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\vanco\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\obj\Debug\WindowsFormsApp1.dangki.resources

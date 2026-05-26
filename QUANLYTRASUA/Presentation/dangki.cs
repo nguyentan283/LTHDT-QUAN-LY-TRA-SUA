@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.Dangnhap;
 
 namespace WindowsFormsApp1
 {
@@ -25,10 +26,20 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Bạn đã đăng kí thành công!!");
-            DangNhap dn = new DangNhap();
+            dangnhap dn = new dangnhap();
             dn.Show();
 
             this.Hide();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

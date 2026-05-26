@@ -9,3 +9,4 @@ C:\Users\vanco\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\obj\Debug\WindowsFormsApp1.csp
 C:\Users\vanco\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\obj\Debug\WindowsFormsApp1.exe
 C:\Users\vanco\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\vanco\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\obj\Debug\WindowsFormsApp1.dangki.resources
+C:\Users\vanco\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\obj\Debug\WindowsFormsApp1.Dangnhap.dangnhap.resources

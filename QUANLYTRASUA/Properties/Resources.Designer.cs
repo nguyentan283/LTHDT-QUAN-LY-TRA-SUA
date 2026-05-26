@@ -63,6 +63,16 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap anahaha {
+            get {
+                object obj = ResourceManager.GetObject("anahaha", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ChatGPT_Image_16_20_40_26_thg_5__2026 {
             get {
                 object obj = ResourceManager.GetObject("ChatGPT Image 16_20_40 26 thg 5, 2026", resourceCulture);
@@ -76,6 +86,16 @@ namespace WindowsFormsApp1.Properties {
         internal static System.Drawing.Bitmap ChatGPT_Image_17_30_16_26_thg_5__2026 {
             get {
                 object obj = ResourceManager.GetObject("ChatGPT Image 17_30_16 26 thg 5, 2026", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gemini_Generated_Image_oi80rwoi80rwoi80 {
+            get {
+                object obj = ResourceManager.GetObject("Gemini_Generated_Image_oi80rwoi80rwoi80", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

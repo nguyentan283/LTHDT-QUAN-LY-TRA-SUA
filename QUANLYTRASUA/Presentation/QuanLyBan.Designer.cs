@@ -105,18 +105,18 @@
             // dgvBan
             // 
             this.dgvBan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBan.Location = new System.Drawing.Point(504, 100);
+            this.dgvBan.Location = new System.Drawing.Point(30, 117);
             this.dgvBan.Name = "dgvBan";
             this.dgvBan.RowHeadersWidth = 51;
             this.dgvBan.RowTemplate.Height = 24;
-            this.dgvBan.Size = new System.Drawing.Size(340, 340);
+            this.dgvBan.Size = new System.Drawing.Size(878, 340);
             this.dgvBan.TabIndex = 1;
             // 
             // lblMaBan
             // 
             this.lblMaBan.AutoSize = true;
             this.lblMaBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMaBan.Location = new System.Drawing.Point(44, 51);
+            this.lblMaBan.Location = new System.Drawing.Point(46, 48);
             this.lblMaBan.Name = "lblMaBan";
             this.lblMaBan.Size = new System.Drawing.Size(57, 18);
             this.lblMaBan.TabIndex = 2;
@@ -143,7 +143,7 @@
             // 
             this.lblSucChua.AutoSize = true;
             this.lblSucChua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSucChua.Location = new System.Drawing.Point(31, 81);
+            this.lblSucChua.Location = new System.Drawing.Point(33, 78);
             this.lblSucChua.Name = "lblSucChua";
             this.lblSucChua.Size = new System.Drawing.Size(70, 18);
             this.lblSucChua.TabIndex = 5;
@@ -161,14 +161,14 @@
             // 
             // txtMaBan
             // 
-            this.txtMaBan.Location = new System.Drawing.Point(130, 47);
+            this.txtMaBan.Location = new System.Drawing.Point(132, 44);
             this.txtMaBan.Name = "txtMaBan";
             this.txtMaBan.Size = new System.Drawing.Size(123, 22);
             this.txtMaBan.TabIndex = 7;
             // 
             // txtSucChua
             // 
-            this.txtSucChua.Location = new System.Drawing.Point(130, 79);
+            this.txtSucChua.Location = new System.Drawing.Point(132, 76);
             this.txtSucChua.Name = "txtSucChua";
             this.txtSucChua.Size = new System.Drawing.Size(123, 22);
             this.txtSucChua.TabIndex = 8;

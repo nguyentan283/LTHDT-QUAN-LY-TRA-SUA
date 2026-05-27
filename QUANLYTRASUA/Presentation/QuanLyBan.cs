@@ -12,8 +12,7 @@ namespace WindowsFormsApp1.Presentation
 {
     public partial class QuanLyBan : Form
     {
-        // Danh sách bàn
-        List<Ban> dsBan = new List<Ban>();
+        DataTable dt = new DataTable();
 
         public QuanLyBan()
         {
@@ -21,63 +20,50 @@ namespace WindowsFormsApp1.Presentation
 
             dgvBan.CellClick += dgvBan_CellClick;
 
-            // Chỉ đọc DataGridView
+            // Tạo cột
+            dt.Columns.Add("MaBan");
+            dt.Columns.Add("SucChua");
+
+            dgvBan.DataSource = dt;
+
+            // Chỉ đọc
             dgvBan.ReadOnly = true;
 
-            // Chỉ chọn nguyên dòng
+            // Chọn nguyên dòng
             dgvBan.SelectionMode =
                 DataGridViewSelectionMode.FullRowSelect;
 
             // Chỉ chọn 1 dòng
             dgvBan.MultiSelect = false;
 
-            // Ẩn dòng trắng cuối
+            // Ẩn dòng trắng
             dgvBan.AllowUserToAddRows = false;
-        }
-
-        // ================= HIỂN THỊ =================
-        void HienThiDanhSach()
-        {
-            dgvBan.DataSource = null;
-            dgvBan.DataSource = dsBan;
         }
 
         // ================= THÊM =================
         private void btnThem_Click(object sender, EventArgs e)
         {
-            // Kiểm tra rỗng
             if (txtMaBan.Text == "" || txtSucChua.Text == "")
             {
-                MessageBox.Show("Vui lòng nhập đầy đủ dữ liệu");
-                return;
-            }
-
-            // Kiểm tra sức chứa phải là số
-            if (!int.TryParse(txtSucChua.Text, out int sc))
-            {
-                MessageBox.Show("Sức chứa phải là số");
+                MessageBox.Show("Vui lòng nhập đầy đủ");
                 return;
             }
 
             // Kiểm tra trùng mã bàn
-            foreach (Ban b in dsBan)
+            foreach (DataRow row in dt.Rows)
             {
-                if (b.MaBan == txtMaBan.Text)
+                if (row["MaBan"].ToString() == txtMaBan.Text)
                 {
                     MessageBox.Show("Mã bàn đã tồn tại");
                     return;
                 }
             }
 
-            // Thêm bàn
-            Ban banMoi = new Ban();
-
-            banMoi.MaBan = txtMaBan.Text;
-            banMoi.SucChua = sc;
-
-            dsBan.Add(banMoi);
-
-            HienThiDanhSach();
+            // Thêm dòng mới
+            dt.Rows.Add(
+                txtMaBan.Text,
+                txtSucChua.Text
+            );
 
             MessageBox.Show("Thêm thành công");
         }
@@ -85,62 +71,35 @@ namespace WindowsFormsApp1.Presentation
         // ================= SỬA =================
         private void btnSua_Click(object sender, EventArgs e)
         {
-            if (!int.TryParse(txtSucChua.Text, out int sc))
+            foreach (DataRow row in dt.Rows)
             {
-                MessageBox.Show("Sức chứa phải là số");
-                return;
-            }
-
-            bool timThay = false;
-
-            foreach (Ban b in dsBan)
-            {
-                if (b.MaBan == txtMaBan.Text)
+                if (row["MaBan"].ToString() == txtMaBan.Text)
                 {
-                    b.SucChua = sc;
-                    timThay = true;
-                    break;
+                    row["SucChua"] = txtSucChua.Text;
+
+                    MessageBox.Show("Sửa thành công");
+                    return;
                 }
             }
 
-            if (timThay)
-            {
-                HienThiDanhSach();
-                MessageBox.Show("Sửa thành công");
-            }
-            else
-            {
-                MessageBox.Show("Không tìm thấy mã bàn");
-            }
+            MessageBox.Show("Không tìm thấy mã bàn");
         }
 
         // ================= XÓA =================
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            DialogResult tb = MessageBox.Show(
-                "Bạn có muốn xóa không?",
-                "Thông báo",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Question);
-
-            if (tb == DialogResult.Yes)
+            for (int i = 0; i < dt.Rows.Count; i++)
             {
-                for (int i = 0; i < dsBan.Count; i++)
+                if (dt.Rows[i]["MaBan"].ToString() == txtMaBan.Text)
                 {
-                    if (dsBan[i].MaBan == txtMaBan.Text)
-                    {
-                        dsBan.RemoveAt(i);
+                    dt.Rows.RemoveAt(i);
 
-                        HienThiDanhSach();
-
-                        MessageBox.Show("Xóa thành công");
-
-                        return;
-                    }
+                    MessageBox.Show("Xóa thành công");
+                    return;
                 }
-
-                MessageBox.Show("Không tìm thấy mã bàn");
             }
+
+            MessageBox.Show("Không tìm thấy mã bàn");
         }
 
         // ================= XÓA TRẮNG =================
@@ -156,16 +115,7 @@ namespace WindowsFormsApp1.Presentation
         // ================= THOÁT =================
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            DialogResult tb = MessageBox.Show(
-                "Bạn có muốn thoát không?",
-                "Thông báo",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Question);
-
-            if (tb == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
+            Application.Exit();
         }
 
         // ================= CLICK DGV =================
@@ -184,14 +134,22 @@ namespace WindowsFormsApp1.Presentation
         // ================= TÌM KIẾM =================
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
-            string ma = txtTimKiem.Text;
+            string ma = txtTimKiem.Text.ToLower();
 
-            var ketQua = dsBan
-                .Where(x => x.MaBan.Contains(ma))
-                .ToList();
+            foreach (DataGridViewRow row in dgvBan.Rows)
+            {
+                row.Visible = true;
 
-            dgvBan.DataSource = null;
-            dgvBan.DataSource = ketQua;
+                if (!row.Cells[0].Value
+                    .ToString()
+                    .ToLower()
+                    .Contains(ma))
+                {
+                    row.Visible = false;
+                }
+
+
+            }
         }
 
     }

@@ -147,6 +147,8 @@ namespace WindowsFormsApp1.Presentation
                 {
                     row.Visible = false;
                 }
+
+
             }
         }
 

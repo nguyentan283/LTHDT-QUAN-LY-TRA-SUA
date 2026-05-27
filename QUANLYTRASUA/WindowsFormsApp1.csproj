@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ban.cs" />
     <Compile Include="Presentation\dangki.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +71,12 @@
     <Compile Include="Presentation\main.Designer.cs">
       <DependentUpon>main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\QuanLyBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\QuanLyBan.Designer.cs">
+      <DependentUpon>QuanLyBan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Presentation\dangki.resx">
@@ -80,6 +87,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\main.resx">
       <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\QuanLyBan.resx">
+      <DependentUpon>QuanLyBan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

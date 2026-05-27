@@ -175,6 +175,7 @@
             this.button4.TabIndex = 25;
             this.button4.Text = "Đăng nhập 🔑";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // panel3
             // 

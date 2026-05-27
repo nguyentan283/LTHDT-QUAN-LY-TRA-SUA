@@ -36,5 +36,13 @@ namespace WindowsFormsApp1.Dangnhap
         {
             Application.Exit();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            main mainn = new main();
+            mainn.Show();
+
+            this.Hide();
+        }
     }
 }

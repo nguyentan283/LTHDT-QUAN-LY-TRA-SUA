@@ -232,6 +232,7 @@
             this.Name = "dangki";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "dangki";
+            this.Load += new System.EventHandler(this.dangki_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);

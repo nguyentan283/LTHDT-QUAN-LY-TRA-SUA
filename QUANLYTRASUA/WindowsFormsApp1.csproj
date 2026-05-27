@@ -52,7 +52,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ban.cs" />
     <Compile Include="Presentation\dangki.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -71,10 +71,7 @@ namespace WindowsFormsApp1.Presentation
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
 
-        }
         private void button6_Click(object sender, EventArgs e)
         {
 
@@ -95,6 +92,13 @@ namespace WindowsFormsApp1.Presentation
         private void btnTrangchu_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnmenu_Click(object sender, EventArgs e)
+        {
+            menu mn = new menu();
+            mn.Show();
+            this.Hide();
         }
     }
 }

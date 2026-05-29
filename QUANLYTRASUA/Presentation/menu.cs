@@ -7,19 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.Presentation;
 
-namespace WindowsFormsApp1.Presentation
+namespace WindowsFormsApp1
 {
-    public partial class nhanvien : Form
+    public partial class menu : Form
     {
-        public nhanvien()
+        public menu()
         {
             InitializeComponent();
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void btnTrangchu_Click(object sender, EventArgs e)
@@ -31,7 +27,21 @@ namespace WindowsFormsApp1.Presentation
 
         private void btnnhanvien_Click(object sender, EventArgs e)
         {
+            nhanvien nv = new nhanvien();
+            nv.Show();
+            this.Hide();
+        }
 
+        private void btnmenu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTrangchu_Click_1(object sender, EventArgs e)
+        {
+            manhinhchinh mhn = new manhinhchinh();
+            mhn.Show();
+            this.Hide();
         }
     }
 }

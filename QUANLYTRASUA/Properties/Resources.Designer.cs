@@ -63,9 +63,69 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _7e04c7b1858504db5d94 {
+            get {
+                object obj = ResourceManager.GetObject("7e04c7b1858504db5d94", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _98acf1dfb0eb31b568fa {
+            get {
+                object obj = ResourceManager.GetObject("98acf1dfb0eb31b568fa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap a40638f17ac5fb9ba2d4 {
+            get {
+                object obj = ResourceManager.GetObject("a40638f17ac5fb9ba2d4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap anahaha {
             get {
                 object obj = ResourceManager.GetObject("anahaha", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap anh_do_an_vat_de_thuong_095145618 {
+            get {
+                object obj = ResourceManager.GetObject("anh-do-an-vat-de-thuong_095145618", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap asas {
+            get {
+                object obj = ResourceManager.GetObject("asas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bánh_tráng_trộn___Rice_paper_salad {
+            get {
+                object obj = ResourceManager.GetObject("Bánh tráng trộn - Rice paper salad", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

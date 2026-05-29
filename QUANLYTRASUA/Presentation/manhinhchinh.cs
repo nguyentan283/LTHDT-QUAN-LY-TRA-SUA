@@ -100,5 +100,17 @@ namespace WindowsFormsApp1.Presentation
             mn.Show();
             this.Hide();
         }
+
+        private void btnhoadon_Click(object sender, EventArgs e)
+        {
+            hoadon hd = new hoadon();
+            hd.Show();
+            this.Hide();
+        }
+
+        private void lbltimer_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.Presentation;
 
 namespace WindowsFormsApp1.Dangnhap
 {
@@ -39,9 +40,16 @@ namespace WindowsFormsApp1.Dangnhap
 
         private void button4_Click(object sender, EventArgs e)
         {
-            main mainn = new main();
-            mainn.Show();
+            manhinhchinh mhc = new manhinhchinh();
+            mhc.Show();
 
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            dangki dk = new dangki();
+            dk.Show();
             this.Hide();
         }
     }

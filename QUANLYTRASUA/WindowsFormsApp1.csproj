@@ -64,11 +64,17 @@
     <Compile Include="Presentation\dangnhap.Designer.cs">
       <DependentUpon>dangnhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\main.cs">
+    <Compile Include="Presentation\manhinhchinh.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation\main.Designer.cs">
-      <DependentUpon>main.cs</DependentUpon>
+    <Compile Include="Presentation\manhinhchinh.Designer.cs">
+      <DependentUpon>manhinhchinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\nhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\nhanvien.Designer.cs">
+      <DependentUpon>nhanvien.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation\QuanLyBan.cs">
       <SubType>Form</SubType>
@@ -84,8 +90,11 @@
     <EmbeddedResource Include="Presentation\dangnhap.resx">
       <DependentUpon>dangnhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\main.resx">
-      <DependentUpon>main.cs</DependentUpon>
+    <EmbeddedResource Include="Presentation\manhinhchinh.resx">
+      <DependentUpon>manhinhchinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\nhanvien.resx">
+      <DependentUpon>nhanvien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\QuanLyBan.resx">
       <DependentUpon>QuanLyBan.cs</DependentUpon>
@@ -130,6 +139,24 @@
   <ItemGroup>
     <Folder Include="DAL\" />
     <Folder Include="Entity\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bánh tráng trộn - Rice paper salad.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anh-do-an-vat-de-thuong_095145618.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\98acf1dfb0eb31b568fa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7e04c7b1858504db5d94.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a40638f17ac5fb9ba2d4.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

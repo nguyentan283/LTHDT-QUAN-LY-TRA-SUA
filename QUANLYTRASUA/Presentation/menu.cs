@@ -43,7 +43,5 @@ namespace WindowsFormsApp1
             mhn.Show();
             this.Hide();
         }
-
-
     }
 }

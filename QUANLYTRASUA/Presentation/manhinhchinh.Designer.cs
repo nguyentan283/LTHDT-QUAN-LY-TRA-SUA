@@ -130,12 +130,12 @@
             // 
             // btnquanlyban
             // 
-            this.btnquanlyban.Location = new System.Drawing.Point(97, 578);
+            this.btnquanlyban.Location = new System.Drawing.Point(97, 579);
             this.btnquanlyban.Margin = new System.Windows.Forms.Padding(4);
             this.btnquanlyban.Name = "btnquanlyban";
             this.btnquanlyban.Size = new System.Drawing.Size(117, 38);
             this.btnquanlyban.TabIndex = 8;
-            this.btnquanlyban.Text = "Quan ly ban";
+            this.btnquanlyban.Text = "Quản lý bàn";
             this.btnquanlyban.UseVisualStyleBackColor = true;
             this.btnquanlyban.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -306,9 +306,9 @@
             this.lbltimer.Location = new System.Drawing.Point(1184, 14);
             this.lbltimer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbltimer.Name = "lbltimer";
-            this.lbltimer.Size = new System.Drawing.Size(94, 24);
+            this.lbltimer.Size = new System.Drawing.Size(89, 24);
             this.lbltimer.TabIndex = 16;
-            this.lbltimer.Text = "Thoi gian ";
+            this.lbltimer.Text = "Thời gian";
             // 
             // pictureBox4
             // 

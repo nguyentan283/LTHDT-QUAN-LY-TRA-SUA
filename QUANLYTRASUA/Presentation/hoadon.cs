@@ -40,6 +40,8 @@ namespace WindowsFormsApp1.Presentation
         private void hoadon_Load(object sender, EventArgs e)
         {
             loadchitietmon();
+            btnhoadon.BackColor = Color.Peru;
+            btnhoadon.ForeColor = Color.Ivory;
         }
 
         private void btnmenu_Click(object sender, EventArgs e)
@@ -79,24 +81,5 @@ namespace WindowsFormsApp1.Presentation
         {
             lbltimer.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
         }
-
-        private void btntaoqr_Click(object sender, EventArgs e)
-        {
-            string bank = "MB";
-            string stk = "0325821891";
-            string tenTK = "4CUTI";
-
-            string tongTien = txttongtien.Text;
-            string maHD = txtmahd.Text;
-
-            string url = "https://img.vietqr.io/image/"
-                + bank + "-" + stk + "-compact2.png"
-                + "?amount=" + tongTien
-                + "&addInfo=" + maHD
-                + "&accountName=" + tenTK;
-
-            picqr.Load(url);
-        }
-    
     }
 }

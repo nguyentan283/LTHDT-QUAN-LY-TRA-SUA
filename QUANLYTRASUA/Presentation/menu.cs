@@ -76,5 +76,11 @@ namespace WindowsFormsApp1
             hd.Show();
             this.Hide();
         }
+
+        private void menu_Load(object sender, EventArgs e)
+        {
+            btnmenu.BackColor = Color.Peru;
+            btnmenu.ForeColor = Color.Ivory;
+        }
     }
 }

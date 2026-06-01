@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(nhanvien));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnhoadon = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -85,7 +86,6 @@
             this.panel1.Controls.Add(this.btnhoadon);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.btndangxuat);
             this.panel1.Controls.Add(this.btnquanlyban);
             this.panel1.Controls.Add(this.btnmenu);
             this.panel1.Controls.Add(this.btnnhanvien);
@@ -98,13 +98,14 @@
             // 
             // btnhoadon
             // 
+            this.btnhoadon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnhoadon.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnhoadon.Location = new System.Drawing.Point(73, 349);
             this.btnhoadon.Name = "btnhoadon";
             this.btnhoadon.Size = new System.Drawing.Size(88, 34);
             this.btnhoadon.TabIndex = 12;
             this.btnhoadon.Text = "Hóa đơn";
-            this.btnhoadon.UseVisualStyleBackColor = true;
+            this.btnhoadon.UseVisualStyleBackColor = false;
             this.btnhoadon.Click += new System.EventHandler(this.btnhoadon_Click);
             // 
             // pictureBox3
@@ -131,7 +132,7 @@
             // 
             this.btndangxuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btndangxuat.ForeColor = System.Drawing.Color.Black;
-            this.btndangxuat.Location = new System.Drawing.Point(73, 507);
+            this.btndangxuat.Location = new System.Drawing.Point(389, 380);
             this.btndangxuat.Name = "btndangxuat";
             this.btndangxuat.Size = new System.Drawing.Size(88, 25);
             this.btndangxuat.TabIndex = 10;
@@ -140,45 +141,50 @@
             // 
             // btnquanlyban
             // 
+            this.btnquanlyban.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnquanlyban.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnquanlyban.Location = new System.Drawing.Point(73, 470);
             this.btnquanlyban.Name = "btnquanlyban";
-            this.btnquanlyban.Size = new System.Drawing.Size(88, 31);
+            this.btnquanlyban.Size = new System.Drawing.Size(101, 31);
             this.btnquanlyban.TabIndex = 8;
             this.btnquanlyban.Text = "Quan ly ban";
-            this.btnquanlyban.UseVisualStyleBackColor = true;
+            this.btnquanlyban.UseVisualStyleBackColor = false;
             this.btnquanlyban.Click += new System.EventHandler(this.btnquanlyban_Click);
             // 
             // btnmenu
             // 
+            this.btnmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnmenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnmenu.Location = new System.Drawing.Point(73, 309);
             this.btnmenu.Name = "btnmenu";
             this.btnmenu.Size = new System.Drawing.Size(88, 34);
             this.btnmenu.TabIndex = 7;
             this.btnmenu.Text = "Menu";
-            this.btnmenu.UseVisualStyleBackColor = true;
+            this.btnmenu.UseVisualStyleBackColor = false;
             this.btnmenu.Click += new System.EventHandler(this.btnmenu_Click);
             // 
             // btnnhanvien
             // 
+            this.btnnhanvien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnnhanvien.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnnhanvien.Location = new System.Drawing.Point(73, 269);
             this.btnnhanvien.Name = "btnnhanvien";
             this.btnnhanvien.Size = new System.Drawing.Size(88, 34);
             this.btnnhanvien.TabIndex = 6;
             this.btnnhanvien.Text = "Nhân viên";
-            this.btnnhanvien.UseVisualStyleBackColor = true;
+            this.btnnhanvien.UseVisualStyleBackColor = false;
             this.btnnhanvien.Click += new System.EventHandler(this.btnnhanvien_Click);
             // 
             // btnTrangchu
             // 
+            this.btnTrangchu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnTrangchu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnTrangchu.Location = new System.Drawing.Point(73, 229);
             this.btnTrangchu.Name = "btnTrangchu";
             this.btnTrangchu.Size = new System.Drawing.Size(88, 34);
             this.btnTrangchu.TabIndex = 5;
             this.btnTrangchu.Text = "Trang Chủ";
-            this.btnTrangchu.UseVisualStyleBackColor = true;
+            this.btnTrangchu.UseVisualStyleBackColor = false;
             this.btnTrangchu.Click += new System.EventHandler(this.btnTrangchu_Click);
             // 
             // pictureBox1
@@ -194,9 +200,6 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.panel3.Controls.Add(this.btnxoa);
-            this.panel3.Controls.Add(this.btnthem);
-            this.panel3.Controls.Add(this.btnsua);
             this.panel3.Controls.Add(this.lbldanhsachnv);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.label3);
@@ -210,7 +213,7 @@
             // btnxoa
             // 
             this.btnxoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnxoa.Location = new System.Drawing.Point(666, 412);
+            this.btnxoa.Location = new System.Drawing.Point(342, 340);
             this.btnxoa.Name = "btnxoa";
             this.btnxoa.Size = new System.Drawing.Size(88, 34);
             this.btnxoa.TabIndex = 17;
@@ -220,7 +223,7 @@
             // btnthem
             // 
             this.btnthem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnthem.Location = new System.Drawing.Point(349, 412);
+            this.btnthem.Location = new System.Drawing.Point(40, 340);
             this.btnthem.Name = "btnthem";
             this.btnthem.Size = new System.Drawing.Size(88, 34);
             this.btnthem.TabIndex = 14;
@@ -230,7 +233,7 @@
             // btnsua
             // 
             this.btnsua.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnsua.Location = new System.Drawing.Point(511, 412);
+            this.btnsua.Location = new System.Drawing.Point(202, 340);
             this.btnsua.Name = "btnsua";
             this.btnsua.Size = new System.Drawing.Size(88, 34);
             this.btnsua.TabIndex = 18;
@@ -428,7 +431,11 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.btnthem);
+            this.panel4.Controls.Add(this.btnxoa);
+            this.panel4.Controls.Add(this.btnsua);
             this.panel4.Controls.Add(this.dgvnhanvien);
+            this.panel4.Controls.Add(this.btndangxuat);
             this.panel4.Location = new System.Drawing.Point(309, 61);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(474, 405);
@@ -498,6 +505,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "nhanvien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "nhanvien";

@@ -17,7 +17,6 @@ namespace WindowsFormsApp1.Presentation
         {
             InitializeComponent();
         }
-
         private void pictureBox3_Click(object sender, EventArgs e)
         {
 
@@ -26,6 +25,8 @@ namespace WindowsFormsApp1.Presentation
         {
             Taoban();
             LoadHoaDon();
+            btnTrangchu.BackColor = Color.Peru;
+            btnTrangchu.ForeColor = Color.Ivory;
         }
         void LoadHoaDon()
         {
@@ -111,6 +112,13 @@ namespace WindowsFormsApp1.Presentation
         private void lbltimer_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            taodonmoi tdm = new taodonmoi();
+            tdm.Show();
+            this.Hide();
         }
     }
 }

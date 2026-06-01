@@ -96,24 +96,26 @@
             // 
             // btnnhanvien
             // 
+            this.btnnhanvien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnnhanvien.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnnhanvien.Location = new System.Drawing.Point(73, 269);
             this.btnnhanvien.Name = "btnnhanvien";
             this.btnnhanvien.Size = new System.Drawing.Size(88, 34);
             this.btnnhanvien.TabIndex = 6;
             this.btnnhanvien.Text = "Nhân viên";
-            this.btnnhanvien.UseVisualStyleBackColor = true;
+            this.btnnhanvien.UseVisualStyleBackColor = false;
             this.btnnhanvien.Click += new System.EventHandler(this.btnnhanvien_Click_1);
             // 
             // btnTrangchu
             // 
+            this.btnTrangchu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnTrangchu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnTrangchu.Location = new System.Drawing.Point(73, 229);
             this.btnTrangchu.Name = "btnTrangchu";
             this.btnTrangchu.Size = new System.Drawing.Size(88, 34);
             this.btnTrangchu.TabIndex = 5;
             this.btnTrangchu.Text = "Trang Chủ";
-            this.btnTrangchu.UseVisualStyleBackColor = true;
+            this.btnTrangchu.UseVisualStyleBackColor = false;
             this.btnTrangchu.Click += new System.EventHandler(this.btnTrangchu_Click_1);
             // 
             // pictureBox1
@@ -132,7 +134,6 @@
             this.panel1.Controls.Add(this.btnhoadon);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.btndangxuat);
             this.panel1.Controls.Add(this.btnquanlyban);
             this.panel1.Controls.Add(this.btnmenu);
             this.panel1.Controls.Add(this.btnnhanvien);
@@ -145,13 +146,14 @@
             // 
             // btnhoadon
             // 
+            this.btnhoadon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnhoadon.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnhoadon.Location = new System.Drawing.Point(73, 349);
             this.btnhoadon.Name = "btnhoadon";
             this.btnhoadon.Size = new System.Drawing.Size(88, 34);
             this.btnhoadon.TabIndex = 12;
             this.btnhoadon.Text = "Hóa đơn";
-            this.btnhoadon.UseVisualStyleBackColor = true;
+            this.btnhoadon.UseVisualStyleBackColor = false;
             this.btnhoadon.Click += new System.EventHandler(this.btnhoadon_Click);
             // 
             // pictureBox3
@@ -178,7 +180,7 @@
             // 
             this.btndangxuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btndangxuat.ForeColor = System.Drawing.Color.Black;
-            this.btndangxuat.Location = new System.Drawing.Point(73, 507);
+            this.btndangxuat.Location = new System.Drawing.Point(695, 438);
             this.btndangxuat.Name = "btndangxuat";
             this.btndangxuat.Size = new System.Drawing.Size(88, 25);
             this.btndangxuat.TabIndex = 10;
@@ -187,23 +189,26 @@
             // 
             // btnquanlyban
             // 
+            this.btnquanlyban.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnquanlyban.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnquanlyban.Location = new System.Drawing.Point(73, 470);
             this.btnquanlyban.Name = "btnquanlyban";
-            this.btnquanlyban.Size = new System.Drawing.Size(88, 31);
+            this.btnquanlyban.Size = new System.Drawing.Size(103, 31);
             this.btnquanlyban.TabIndex = 8;
             this.btnquanlyban.Text = "Quan ly ban";
-            this.btnquanlyban.UseVisualStyleBackColor = true;
+            this.btnquanlyban.UseVisualStyleBackColor = false;
             this.btnquanlyban.Click += new System.EventHandler(this.btnquanlyban_Click);
             // 
             // btnmenu
             // 
+            this.btnmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnmenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnmenu.Location = new System.Drawing.Point(73, 309);
             this.btnmenu.Name = "btnmenu";
             this.btnmenu.Size = new System.Drawing.Size(88, 34);
             this.btnmenu.TabIndex = 7;
             this.btnmenu.Text = "Menu";
-            this.btnmenu.UseVisualStyleBackColor = true;
+            this.btnmenu.UseVisualStyleBackColor = false;
             this.btnmenu.Click += new System.EventHandler(this.btnmenu_Click);
             // 
             // lbltimer
@@ -249,6 +254,7 @@
             this.panel3.Controls.Add(this.flowLayoutPanel1);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.btndangxuat);
             this.panel3.Location = new System.Drawing.Point(240, 68);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(786, 475);
@@ -571,6 +577,7 @@
             this.Name = "menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "menu";
+            this.Load += new System.EventHandler(this.menu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

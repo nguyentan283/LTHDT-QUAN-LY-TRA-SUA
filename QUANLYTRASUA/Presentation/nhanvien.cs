@@ -51,6 +51,8 @@ namespace WindowsFormsApp1.Presentation
         private void nhanvien_Load(object sender, EventArgs e)
         {
             loadhanvien();
+            btnnhanvien.BackColor = Color.Peru;
+            btnnhanvien.ForeColor = Color.Ivory;
         }
 
         private void btnmenu_Click(object sender, EventArgs e)

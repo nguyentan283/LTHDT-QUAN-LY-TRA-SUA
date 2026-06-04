@@ -16,7 +16,13 @@ C:\Users\vanco\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\obj\Debug\WindowsFormsApp1.exe
 C:\Users\vanco\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\vanco\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\obj\Debug\WindowsFormsApp1.menu.resources
 C:\Users\vanco\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\obj\Debug\WindowsFormsApp1.Presentation.hoadon.resources
+C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\bin\Debug\Images\boba.png
+C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\bin\Debug\WindowsFormsApp1.exe
+C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\bin\Debug\System.Data.SQLite.dll
 C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\obj\Debug\WindowsFormsApp1.Mon.resources
 C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\obj\Debug\WindowsFormsApp1.Presentation.hoadon.resources
 C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\obj\Debug\WindowsFormsApp1.menu.resources
 C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\obj\Debug\WindowsFormsApp1.dangki.resources
@@ -28,11 +34,6 @@ C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\obj\Debug\WindowsFormsApp1.Proper
 C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\obj\Debug\WindowsFormsApp1.Presentation.taodonmoi.resources
 C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
 C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
-C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\bin\Debug\WindowsFormsApp1.exe.config
-C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\bin\Debug\WindowsFormsApp1.exe
-C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\bin\Debug\WindowsFormsApp1.pdb
-C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\bin\Debug\System.Data.SQLite.dll
-C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\obj\Debug\WindowsFormsApp1.Mon.resources
 C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\obj\Debug\WindowsF.A1EEDF9B.Up2Date
 C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\obj\Debug\WindowsFormsApp1.exe
 C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\obj\Debug\WindowsFormsApp1.pdb

@@ -194,5 +194,13 @@
   <ItemGroup>
     <None Include="Resources\a40638f17ac5fb9ba2d4.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\boba.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\tsmaucam.png" />
+    <Content Include="Images\tsmauxanh.png" />
+    <Content Include="Images\tsvietquat.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

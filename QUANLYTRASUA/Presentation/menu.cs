@@ -87,30 +87,45 @@ namespace WindowsFormsApp1
             public string TenMon { get; set; }
             public int Gia { get; set; }
             public string HinhAnh { get; set; }
+            public string Loai { get; set; }
 
-            public MonAn(string tenMon, int gia, string hinhAnh)
+            public MonAn(string tenMon, int gia, string hinhAnh, string loai)
             {
                 TenMon = tenMon;
                 Gia = gia;
                 HinhAnh = hinhAnh;
+                Loai = loai;
             }
         }
         List<MonAn> dsMon = new List<MonAn>();
 
         private void menu_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Form đã load");
+            cboDanhMuc.Items.Add("Trà sữa");
+            cboDanhMuc.Items.Add("Ăn vặt");
 
-            dsMon.Add(new MonAn("Trà sữa boba", 120000, @"Images\boba.jpg"));
+            cboDanhMuc.SelectedIndex = 0;
+            //MessageBox.Show("Form đã load");
 
-            LoadMenu();
+            dsMon.Add(new MonAn("Trà sữa boba", 120000, @"C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\Images\boba.png", "Trà sữa"));
+            dsMon.Add(new MonAn("Trà sữa việt quất", 45000, @"C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\Images\tsvietquat.png", "Trà sữa"));
+            dsMon.Add(new MonAn("Trà sữa màu xanh", 45000, @"C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\Images\tsmauxanh.png", "Trà sữa"));
+            dsMon.Add(new MonAn("Trà sữa màu cam", 45000, @"C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\Images\tsmaucam.png", "Trà sữa"));
+
+
+
+            LoadMenu(cboDanhMuc.Text);
         }
-        private void LoadMenu()
+        private void LoadMenu(string loai)
         {
             flpMenu.Controls.Clear();
 
             foreach (MonAn mon in dsMon)
             {
+
+                if (mon.Loai != loai)
+                    continue;
+
                 Mon item = new Mon();
 
                 item.TenMon = mon.TenMon;
@@ -119,13 +134,21 @@ namespace WindowsFormsApp1
 
                 item.MonDuocChon += (s, e) =>
                 {
+
                     picAnhMon.Image = Image.FromFile(mon.HinhAnh);
                     txtTenMon.Text = mon.TenMon;
-                    nmrGia.Value = mon.Gia;
+                    nmrGia.Value = Convert.ToDecimal(mon.Gia);
                 };
 
                 flpMenu.Controls.Add(item);
             }
+        }
+
+        private void cboDanhMuc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string loai = cboDanhMuc.Text;
+
+            LoadMenu(loai);
         }
     }
 }

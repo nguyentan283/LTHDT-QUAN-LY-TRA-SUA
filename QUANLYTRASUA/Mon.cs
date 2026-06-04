@@ -27,7 +27,11 @@ namespace WindowsFormsApp1
         public Image HinhAnh
         {
             get { return pictureBox1.Image; }
-            set { pictureBox1.Image = value; }
+            set
+            {
+                pictureBox1.Image = value;
+                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
         }
 
         public Mon()
@@ -45,5 +49,7 @@ namespace WindowsFormsApp1
         {
             MonDuocChon?.Invoke(this, EventArgs.Empty);
         }
+
+        
     }
 }

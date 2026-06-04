@@ -43,7 +43,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.nmrGia = new System.Windows.Forms.NumericUpDown();
             this.nmrSoLuong = new System.Windows.Forms.NumericUpDown();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
@@ -71,11 +70,11 @@
             this.mon5 = new WindowsFormsApp1.Mon();
             this.mon6 = new WindowsFormsApp1.Mon();
             this.mon7 = new WindowsFormsApp1.Mon();
+            this.nmrGia = new System.Windows.Forms.NumericUpDown();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nmrGia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmrSoLuong)).BeginInit();
             this.flpMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAnhMon)).BeginInit();
@@ -83,6 +82,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmrGia)).BeginInit();
             this.SuspendLayout();
             // 
             // btnnhanvien
@@ -245,7 +245,6 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.nmrGia);
             this.panel4.Controls.Add(this.nmrSoLuong);
             this.panel4.Controls.Add(this.btnXoa);
             this.panel4.Controls.Add(this.btnThem);
@@ -253,19 +252,13 @@
             this.panel4.Controls.Add(this.txtTenMon);
             this.panel4.Controls.Add(this.lblGia);
             this.panel4.Controls.Add(this.lblTenMon);
+            this.panel4.Controls.Add(this.nmrGia);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.picAnhMon);
             this.panel4.Location = new System.Drawing.Point(748, 56);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(231, 414);
             this.panel4.TabIndex = 4;
-            // 
-            // nmrGia
-            // 
-            this.nmrGia.Location = new System.Drawing.Point(97, 282);
-            this.nmrGia.Name = "nmrGia";
-            this.nmrGia.Size = new System.Drawing.Size(110, 22);
-            this.nmrGia.TabIndex = 11;
             // 
             // nmrSoLuong
             // 
@@ -363,6 +356,7 @@
             this.cboDanhMuc.Name = "cboDanhMuc";
             this.cboDanhMuc.Size = new System.Drawing.Size(121, 24);
             this.cboDanhMuc.TabIndex = 2;
+            this.cboDanhMuc.SelectedIndexChanged += new System.EventHandler(this.cboDanhMuc_SelectedIndexChanged);
             // 
             // lblDanhMuc
             // 
@@ -532,6 +526,18 @@
             this.mon7.TabIndex = 6;
             this.mon7.TenMon = "label1";
             // 
+            // nmrGia
+            // 
+            this.nmrGia.Location = new System.Drawing.Point(97, 282);
+            this.nmrGia.Maximum = new decimal(new int[] {
+            10000000,
+            0,
+            0,
+            0});
+            this.nmrGia.Name = "nmrGia";
+            this.nmrGia.Size = new System.Drawing.Size(110, 22);
+            this.nmrGia.TabIndex = 7;
+            // 
             // menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -556,7 +562,6 @@
             this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nmrGia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmrSoLuong)).EndInit();
             this.flpMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picAnhMon)).EndInit();
@@ -564,6 +569,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmrGia)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -605,7 +611,6 @@
         private System.Windows.Forms.Label lblTenMon;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.NumericUpDown nmrSoLuong;
-        private System.Windows.Forms.NumericUpDown nmrGia;
         private Mon mon1;
         private Mon mon2;
         private Mon mon3;
@@ -613,5 +618,6 @@
         private Mon mon5;
         private Mon mon6;
         private Mon mon7;
+        private System.Windows.Forms.NumericUpDown nmrGia;
     }
 }

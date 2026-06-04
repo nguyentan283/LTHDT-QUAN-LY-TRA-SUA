@@ -32,10 +32,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(manhinhchinh));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnhoadon = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnquanlyban = new System.Windows.Forms.Button();
             this.btnmenu = new System.Windows.Forms.Button();
             this.btnnhanvien = new System.Windows.Forms.Button();
             this.btnTrangchu = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btndangxuat = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -44,29 +47,40 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.flbBan = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lbltimer = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.panel1.Controls.Add(this.panel12);
+            this.panel1.Controls.Add(this.panel11);
+            this.panel1.Controls.Add(this.panel10);
+            this.panel1.Controls.Add(this.panel6);
+            this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.btnhoadon);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
@@ -91,6 +105,27 @@
             this.btnhoadon.Text = "Hóa đơn";
             this.btnhoadon.UseVisualStyleBackColor = false;
             this.btnhoadon.Click += new System.EventHandler(this.btnhoadon_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::WindowsFormsApp1.Properties.Resources.anh_do_an_vat_de_thuong_095145618;
+            this.pictureBox3.Location = new System.Drawing.Point(111, 389);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(82, 75);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 11;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.asas;
+            this.pictureBox2.Location = new System.Drawing.Point(32, 389);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(73, 75);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
             // 
             // btnquanlyban
             // 
@@ -138,6 +173,16 @@
             this.btnTrangchu.Text = "Trang Chủ";
             this.btnTrangchu.UseVisualStyleBackColor = true;
             this.btnTrangchu.Click += new System.EventHandler(this.btnTrangchu_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.ChatGPT_Image_16_20_40_26_thg_5__2026;
+            this.pictureBox1.Location = new System.Drawing.Point(-37, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(299, 223);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // btndangxuat
             // 
@@ -219,6 +264,28 @@
             this.panel2.Size = new System.Drawing.Size(186, 438);
             this.panel2.TabIndex = 12;
             // 
+            // button9
+            // 
+            this.button9.BackgroundImage = global::WindowsFormsApp1.Properties.Resources._7e04c7b1858504db5d94;
+            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button9.Location = new System.Drawing.Point(21, 245);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(146, 140);
+            this.button9.TabIndex = 11;
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button7
+            // 
+            this.button7.BackgroundImage = global::WindowsFormsApp1.Properties.Resources._98acf1dfb0eb31b568fa;
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button7.Location = new System.Drawing.Point(21, 71);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(146, 140);
+            this.button7.TabIndex = 9;
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
@@ -254,58 +321,77 @@
             this.pictureBox4.TabIndex = 15;
             this.pictureBox4.TabStop = false;
             // 
-            // pictureBox3
+            // panel4
             // 
-            this.pictureBox3.Image = global::WindowsFormsApp1.Properties.Resources.anh_do_an_vat_de_thuong_095145618;
-            this.pictureBox3.Location = new System.Drawing.Point(111, 389);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(82, 75);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 11;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.panel4.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel4.Location = new System.Drawing.Point(240, 68);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(10, 476);
+            this.panel4.TabIndex = 17;
             // 
-            // pictureBox2
+            // panel5
             // 
-            this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.asas;
-            this.pictureBox2.Location = new System.Drawing.Point(32, 389);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(73, 75);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
+            this.panel5.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel5.Location = new System.Drawing.Point(3, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(10, 548);
+            this.panel5.TabIndex = 18;
             // 
-            // pictureBox1
+            // panel6
             // 
-            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.ChatGPT_Image_16_20_40_26_thg_5__2026;
-            this.pictureBox1.Location = new System.Drawing.Point(-37, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(299, 223);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.panel6.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel6.Location = new System.Drawing.Point(214, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(10, 548);
+            this.panel6.TabIndex = 19;
             // 
-            // button9
+            // panel7
             // 
-            this.button9.BackgroundImage = global::WindowsFormsApp1.Properties.Resources._7e04c7b1858504db5d94;
-            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button9.Location = new System.Drawing.Point(21, 245);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(146, 140);
-            this.button9.TabIndex = 11;
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.panel7.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel7.Location = new System.Drawing.Point(240, 68);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(783, 10);
+            this.panel7.TabIndex = 18;
             // 
-            // button7
+            // panel8
             // 
-            this.button7.BackgroundImage = global::WindowsFormsApp1.Properties.Resources._98acf1dfb0eb31b568fa;
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button7.Location = new System.Drawing.Point(21, 71);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(146, 140);
-            this.button7.TabIndex = 9;
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.panel8.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel8.Location = new System.Drawing.Point(240, 537);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(783, 10);
+            this.panel8.TabIndex = 19;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel9.Location = new System.Drawing.Point(1016, 67);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(10, 478);
+            this.panel9.TabIndex = 18;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel10.Location = new System.Drawing.Point(8, 213);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(213, 10);
+            this.panel10.TabIndex = 18;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel11.Location = new System.Drawing.Point(7, 535);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(217, 10);
+            this.panel11.TabIndex = 19;
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel12.Location = new System.Drawing.Point(0, 0);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(234, 13);
+            this.panel12.TabIndex = 20;
             // 
             // manhinhchinh
             // 
@@ -314,6 +400,10 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1026, 546);
+            this.Controls.Add(this.panel9);
+            this.Controls.Add(this.panel8);
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.lbltimer);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.groupBox2);
@@ -329,14 +419,14 @@
             this.Text = "manhinhchinh";
             this.Load += new System.EventHandler(this.manhinhchinh_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -367,5 +457,14 @@
         private System.Windows.Forms.Button btnhoadon;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lbltimer;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel9;
     }
 }

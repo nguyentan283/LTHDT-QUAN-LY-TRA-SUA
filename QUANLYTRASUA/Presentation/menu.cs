@@ -13,6 +13,9 @@ namespace WindowsFormsApp1
 {
     public partial class menu : Form
     {
+
+
+
         public menu()
         {
             InitializeComponent();
@@ -34,9 +37,10 @@ namespace WindowsFormsApp1
 
         private void btnmenu_Click(object sender, EventArgs e)
         {
-            menu mn = new menu();
-            mn.Show();
-            this.Hide();
+            //menu mn = new menu();
+            //mn.Show();
+            //this.Hide();
+            this.Show();
         }
 
         private void btnTrangchu_Click_1(object sender, EventArgs e)
@@ -44,11 +48,6 @@ namespace WindowsFormsApp1
             manhinhchinh mhn = new manhinhchinh();
             mhn.Show();
             this.Hide();
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
 
         private void btnnhanvien_Click_1(object sender, EventArgs e)
@@ -75,6 +74,58 @@ namespace WindowsFormsApp1
             hoadon hd = new hoadon();
             hd.Show();
             this.Hide();
+        }
+
+        private void dgvMenu_CellClick(object sender,
+                               DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        public class MonAn
+        {
+            public string TenMon { get; set; }
+            public int Gia { get; set; }
+            public string HinhAnh { get; set; }
+
+            public MonAn(string tenMon, int gia, string hinhAnh)
+            {
+                TenMon = tenMon;
+                Gia = gia;
+                HinhAnh = hinhAnh;
+            }
+        }
+        List<MonAn> dsMon = new List<MonAn>();
+
+        private void menu_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show("Form đã load");
+
+            dsMon.Add(new MonAn("Trà sữa boba", 120000, @"Images\boba.jpg"));
+
+            LoadMenu();
+        }
+        private void LoadMenu()
+        {
+            flpMenu.Controls.Clear();
+
+            foreach (MonAn mon in dsMon)
+            {
+                Mon item = new Mon();
+
+                item.TenMon = mon.TenMon;
+                item.Gia = mon.Gia.ToString("N0");
+                item.HinhAnh = Image.FromFile(mon.HinhAnh);
+
+                item.MonDuocChon += (s, e) =>
+                {
+                    picAnhMon.Image = Image.FromFile(mon.HinhAnh);
+                    txtTenMon.Text = mon.TenMon;
+                    nmrGia.Value = mon.Gia;
+                };
+
+                flpMenu.Controls.Add(item);
+            }
         }
     }
 }

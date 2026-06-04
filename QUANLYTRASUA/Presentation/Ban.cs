@@ -115,7 +115,6 @@ namespace WindowsFormsApp1.Presentation
         {
 
         }
-
         private void btnHuyDatBan_Click(object sender, EventArgs e)
         {
             // 1. Kiểm tra xem người dùng đã click chọn cái bàn nào chưa

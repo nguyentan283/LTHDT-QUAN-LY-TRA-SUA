@@ -60,20 +60,7 @@ namespace WindowsFormsApp1.Presentation
 
         private void btntaoqr_Click(object sender, EventArgs e)
         {
-            string bank = "MB";
-            string stk = "0325821891";
-            string tenTK = "4CUTI";
-
-            string tongTien = txttongtien.Text;
-            string maHD = txtmahd.Text;
-
-            string url = "https://img.vietqr.io/image/"
-                + bank + "-" + stk + "-compact2.png"
-                + "?amount=" + tongTien
-                + "&addInfo=" + maHD
-                + "&accountName=" + tenTK;
-
-            picqr.Load(url);
+            
         }
         void dsmongoi()
         {

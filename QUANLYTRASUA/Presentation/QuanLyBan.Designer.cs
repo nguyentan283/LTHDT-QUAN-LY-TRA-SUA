@@ -107,7 +107,7 @@
             // 
             this.dgvBan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBan.Location = new System.Drawing.Point(22, 95);
-            this.dgvBan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvBan.Margin = new System.Windows.Forms.Padding(2);
             this.dgvBan.Name = "dgvBan";
             this.dgvBan.RowHeadersWidth = 51;
             this.dgvBan.RowTemplate.Height = 24;
@@ -128,7 +128,7 @@
             // txtTimKiem
             // 
             this.txtTimKiem.Location = new System.Drawing.Point(500, 385);
-            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(2);
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(96, 20);
             this.txtTimKiem.TabIndex = 3;
@@ -137,7 +137,7 @@
             // 
             this.btnTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiem.Location = new System.Drawing.Point(609, 381);
-            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(2);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(72, 27);
             this.btnTimKiem.TabIndex = 4;
@@ -169,7 +169,7 @@
             // txtMaBan
             // 
             this.txtMaBan.Location = new System.Drawing.Point(99, 36);
-            this.txtMaBan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMaBan.Margin = new System.Windows.Forms.Padding(2);
             this.txtMaBan.Name = "txtMaBan";
             this.txtMaBan.Size = new System.Drawing.Size(93, 20);
             this.txtMaBan.TabIndex = 7;
@@ -177,7 +177,7 @@
             // txtSucChua
             // 
             this.txtSucChua.Location = new System.Drawing.Point(99, 62);
-            this.txtSucChua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSucChua.Margin = new System.Windows.Forms.Padding(2);
             this.txtSucChua.Name = "txtSucChua";
             this.txtSucChua.Size = new System.Drawing.Size(93, 20);
             this.txtSucChua.TabIndex = 8;
@@ -200,7 +200,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "QuanLyBan";
             this.Text = "Danh mục bàn";
             this.menuStrip1.ResumeLayout(false);

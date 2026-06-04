@@ -75,7 +75,9 @@ namespace WindowsFormsApp1.Presentation
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+            dangnhap dn = new dangnhap();
+            dn.Show();
+            this.Hide();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -118,6 +120,13 @@ namespace WindowsFormsApp1.Presentation
         {
             taodonmoi tdm = new taodonmoi();
             tdm.Show();
+            this.Hide();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            tongdoanhthu tdt = new tongdoanhthu();
+            tdt.Show();
             this.Hide();
         }
     }

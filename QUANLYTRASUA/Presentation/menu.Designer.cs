@@ -29,16 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(menu));
             this.btnnhanvien = new System.Windows.Forms.Button();
             this.btnTrangchu = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnhoadon = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btndangxuat = new System.Windows.Forms.Button();
             this.btnquanlyban = new System.Windows.Forms.Button();
             this.btnmenu = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btndangxuat = new System.Windows.Forms.Button();
             this.lbltimer = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -55,7 +53,6 @@
             this.lblGia = new System.Windows.Forms.Label();
             this.lblTenMon = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.picAnhMon = new System.Windows.Forms.PictureBox();
             this.flpMenu = new System.Windows.Forms.FlowLayoutPanel();
             this.cboDanhMuc = new System.Windows.Forms.ComboBox();
             this.lblDanhMuc = new System.Windows.Forms.Label();
@@ -63,7 +60,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.picAnhMon = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.mon1 = new WindowsFormsApp1.Mon();
             this.mon2 = new WindowsFormsApp1.Mon();
             this.mon3 = new WindowsFormsApp1.Mon();
@@ -72,17 +73,17 @@
             this.mon6 = new WindowsFormsApp1.Mon();
             this.mon7 = new WindowsFormsApp1.Mon();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmrGia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmrSoLuong)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAnhMon)).BeginInit();
             this.flpMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAnhMon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnnhanvien
@@ -115,7 +116,6 @@
             this.panel1.Controls.Add(this.btnhoadon);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.btndangxuat);
             this.panel1.Controls.Add(this.btnquanlyban);
             this.panel1.Controls.Add(this.btnmenu);
             this.panel1.Controls.Add(this.btnnhanvien);
@@ -137,37 +137,6 @@
             this.btnhoadon.Text = "Hóa đơn";
             this.btnhoadon.UseVisualStyleBackColor = false;
             this.btnhoadon.Click += new System.EventHandler(this.btnhoadon_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::WindowsFormsApp1.Properties.Resources.anh_do_an_vat_de_thuong_095145618;
-            this.pictureBox3.Location = new System.Drawing.Point(111, 389);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(82, 75);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 11;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.asas;
-            this.pictureBox2.Location = new System.Drawing.Point(32, 389);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(73, 75);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
-            // 
-            // btndangxuat
-            // 
-            this.btndangxuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btndangxuat.ForeColor = System.Drawing.Color.Black;
-            this.btndangxuat.Location = new System.Drawing.Point(73, 510);
-            this.btndangxuat.Name = "btndangxuat";
-            this.btndangxuat.Size = new System.Drawing.Size(88, 25);
-            this.btndangxuat.TabIndex = 10;
-            this.btndangxuat.Text = "ĐĂNG XUẤT";
-            this.btndangxuat.UseVisualStyleBackColor = false;
             // 
             // btnquanlyban
             // 
@@ -192,15 +161,17 @@
             this.btnmenu.UseVisualStyleBackColor = true;
             this.btnmenu.Click += new System.EventHandler(this.btnmenu_Click);
             // 
-            // pictureBox1
+            // btndangxuat
             // 
-            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.ChatGPT_Image_16_20_40_26_thg_5__2026;
-            this.pictureBox1.Location = new System.Drawing.Point(-37, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(299, 223);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.btndangxuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btndangxuat.ForeColor = System.Drawing.Color.Black;
+            this.btndangxuat.Location = new System.Drawing.Point(695, 451);
+            this.btndangxuat.Name = "btndangxuat";
+            this.btndangxuat.Size = new System.Drawing.Size(88, 25);
+            this.btndangxuat.TabIndex = 10;
+            this.btndangxuat.Text = "ĐĂNG XUẤT";
+            this.btndangxuat.UseVisualStyleBackColor = false;
+            this.btndangxuat.Click += new System.EventHandler(this.btndangxuat_Click);
             // 
             // lbltimer
             // 
@@ -235,6 +206,7 @@
             this.panel3.Controls.Add(this.panel2);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.btndangxuat);
             this.panel3.Location = new System.Drawing.Point(240, 68);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(786, 475);
@@ -250,7 +222,7 @@
             this.panel2.Controls.Add(this.lblDanhMuc);
             this.panel2.Controls.Add(this.txtTimKiem);
             this.panel2.Location = new System.Drawing.Point(17, 54);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(752, 401);
             this.panel2.TabIndex = 3;
@@ -280,7 +252,7 @@
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.picAnhMon);
             this.panel4.Location = new System.Drawing.Point(561, 46);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(173, 336);
             this.panel4.TabIndex = 4;
@@ -288,7 +260,7 @@
             // nmrGia
             // 
             this.nmrGia.Location = new System.Drawing.Point(73, 229);
-            this.nmrGia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nmrGia.Margin = new System.Windows.Forms.Padding(2);
             this.nmrGia.Name = "nmrGia";
             this.nmrGia.Size = new System.Drawing.Size(82, 20);
             this.nmrGia.TabIndex = 11;
@@ -296,7 +268,7 @@
             // nmrSoLuong
             // 
             this.nmrSoLuong.Location = new System.Drawing.Point(73, 261);
-            this.nmrSoLuong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nmrSoLuong.Margin = new System.Windows.Forms.Padding(2);
             this.nmrSoLuong.Name = "nmrSoLuong";
             this.nmrSoLuong.Size = new System.Drawing.Size(82, 20);
             this.nmrSoLuong.TabIndex = 10;
@@ -304,7 +276,7 @@
             // btnXoa
             // 
             this.btnXoa.Location = new System.Drawing.Point(92, 302);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(60, 24);
             this.btnXoa.TabIndex = 9;
@@ -315,7 +287,7 @@
             // 
             this.btnThem.BackColor = System.Drawing.Color.Transparent;
             this.btnThem.Location = new System.Drawing.Point(16, 302);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(2);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(60, 24);
             this.btnThem.TabIndex = 8;
@@ -335,7 +307,7 @@
             // txtTenMon
             // 
             this.txtTenMon.Location = new System.Drawing.Point(73, 200);
-            this.txtTenMon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTenMon.Margin = new System.Windows.Forms.Padding(2);
             this.txtTenMon.Name = "txtTenMon";
             this.txtTenMon.Size = new System.Drawing.Size(84, 20);
             this.txtTenMon.TabIndex = 4;
@@ -371,16 +343,6 @@
             this.label5.TabIndex = 1;
             this.label5.Text = "Chi tiết món chọn:";
             // 
-            // picAnhMon
-            // 
-            this.picAnhMon.Location = new System.Drawing.Point(2, 2);
-            this.picAnhMon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.picAnhMon.Name = "picAnhMon";
-            this.picAnhMon.Size = new System.Drawing.Size(169, 163);
-            this.picAnhMon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picAnhMon.TabIndex = 0;
-            this.picAnhMon.TabStop = false;
-            // 
             // flpMenu
             // 
             this.flpMenu.AutoScroll = true;
@@ -393,7 +355,7 @@
             this.flpMenu.Controls.Add(this.mon6);
             this.flpMenu.Controls.Add(this.mon7);
             this.flpMenu.Location = new System.Drawing.Point(23, 46);
-            this.flpMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flpMenu.Margin = new System.Windows.Forms.Padding(2);
             this.flpMenu.Name = "flpMenu";
             this.flpMenu.Size = new System.Drawing.Size(522, 336);
             this.flpMenu.TabIndex = 3;
@@ -405,7 +367,7 @@
             "Trà sữa",
             "Ăn vặt"});
             this.cboDanhMuc.Location = new System.Drawing.Point(258, 19);
-            this.cboDanhMuc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboDanhMuc.Margin = new System.Windows.Forms.Padding(2);
             this.cboDanhMuc.Name = "cboDanhMuc";
             this.cboDanhMuc.Size = new System.Drawing.Size(92, 21);
             this.cboDanhMuc.TabIndex = 2;
@@ -425,7 +387,7 @@
             // 
             this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTimKiem.Location = new System.Drawing.Point(23, 19);
-            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(2);
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(127, 23);
             this.txtTimKiem.TabIndex = 0;
@@ -455,6 +417,16 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // picAnhMon
+            // 
+            this.picAnhMon.Location = new System.Drawing.Point(2, 2);
+            this.picAnhMon.Margin = new System.Windows.Forms.Padding(2);
+            this.picAnhMon.Name = "picAnhMon";
+            this.picAnhMon.Size = new System.Drawing.Size(169, 163);
+            this.picAnhMon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picAnhMon.TabIndex = 0;
+            this.picAnhMon.TabStop = false;
+            // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::WindowsFormsApp1.Properties.Resources.anahaha;
@@ -464,6 +436,36 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 19;
             this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::WindowsFormsApp1.Properties.Resources.anh_do_an_vat_de_thuong_095145618;
+            this.pictureBox3.Location = new System.Drawing.Point(111, 389);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(82, 75);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 11;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.asas;
+            this.pictureBox2.Location = new System.Drawing.Point(32, 389);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(73, 75);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.ChatGPT_Image_16_20_40_26_thg_5__2026;
+            this.pictureBox1.Location = new System.Drawing.Point(-37, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(299, 223);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // mon1
             // 
@@ -554,15 +556,13 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "menu";
             this.Load += new System.EventHandler(this.menu_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -571,9 +571,12 @@
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmrGia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmrSoLuong)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAnhMon)).EndInit();
             this.flpMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picAnhMon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

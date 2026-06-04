@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.Dangnhap;
 
 namespace WindowsFormsApp1.Presentation
 {
@@ -95,6 +96,20 @@ namespace WindowsFormsApp1.Presentation
         private void picqr_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btndangxuat_Click(object sender, EventArgs e)
+        {
+            dangnhap dn = new dangnhap();
+            dn.Show();
+            this.Hide();
+        }
+
+        private void btnhoadon_Click(object sender, EventArgs e)
+        {
+            hoadon hd = new hoadon();
+            hd.Show();
+            this.Hide();
         }
     }
 }

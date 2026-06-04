@@ -62,7 +62,7 @@ namespace WindowsFormsApp1.Presentation
         }
         private void button4_Click(object sender, EventArgs e)
         {
-            QuanLyBan qlb = new QuanLyBan();
+            Ban qlb = new Ban();
             qlb.Show();
         }
 

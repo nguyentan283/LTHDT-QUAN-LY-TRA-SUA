@@ -58,6 +58,12 @@
     <Compile Include="Mon.Designer.cs">
       <DependentUpon>Mon.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\Ban.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\Ban.Designer.cs">
+      <DependentUpon>Ban.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\hoadon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,8 +114,17 @@
     <Compile Include="Presentation\taodonmoi.Designer.cs">
       <DependentUpon>taodonmoi.cs</DependentUpon>
     </Compile>
+    <Compile Include="QLBan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QLBan.Designer.cs">
+      <DependentUpon>QLBan.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Mon.resx">
       <DependentUpon>Mon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Ban.resx">
+      <DependentUpon>Ban.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\hoadon.resx">
       <DependentUpon>hoadon.cs</DependentUpon>
@@ -144,6 +159,9 @@
     </Compile>
     <EmbeddedResource Include="Presentation\taodonmoi.resx">
       <DependentUpon>taodonmoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLBan.resx">
+      <DependentUpon>QLBan.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="NHANVIEN.db" />
     <None Include="packages.config" />

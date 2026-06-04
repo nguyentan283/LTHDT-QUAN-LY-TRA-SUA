@@ -14,8 +14,6 @@ namespace WindowsFormsApp1
     public partial class menu : Form
     {
 
-
-
         public menu()
         {
             InitializeComponent();

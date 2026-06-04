@@ -104,6 +104,7 @@ namespace WindowsFormsApp1
             dsMon.Add(new MonAn("Trà sữa boba", 120000, @"Images\boba.jpg"));
 
             LoadMenu();
+            btnmenu.BackColor = Color.Peru;
         }
         private void LoadMenu()
         {

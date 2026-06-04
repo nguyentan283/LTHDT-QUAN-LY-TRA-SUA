@@ -95,11 +95,11 @@
     <Compile Include="Presentation\nhanvien.Designer.cs">
       <DependentUpon>nhanvien.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\QuanLyBan.cs">
+    <Compile Include="Presentation\Ban.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation\QuanLyBan.Designer.cs">
-      <DependentUpon>QuanLyBan.cs</DependentUpon>
+    <Compile Include="Presentation\Ban.Designer.cs">
+      <DependentUpon>Ban.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation\tongdoanhthu.cs">
       <SubType>Form</SubType>
@@ -114,6 +114,12 @@
     </Compile>
     <Compile Include="Presentation\taodonmoi.Designer.cs">
       <DependentUpon>taodonmoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLBan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QLBan.Designer.cs">
+      <DependentUpon>QLBan.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Mon.resx">
       <DependentUpon>Mon.cs</DependentUpon>
@@ -136,8 +142,8 @@
     <EmbeddedResource Include="Presentation\nhanvien.resx">
       <DependentUpon>nhanvien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\QuanLyBan.resx">
-      <DependentUpon>QuanLyBan.cs</DependentUpon>
+    <EmbeddedResource Include="Presentation\Ban.resx">
+      <DependentUpon>Ban.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\tongdoanhthu.resx">
       <DependentUpon>tongdoanhthu.cs</DependentUpon>
@@ -154,6 +160,9 @@
     </Compile>
     <EmbeddedResource Include="Presentation\taodonmoi.resx">
       <DependentUpon>taodonmoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLBan.resx">
+      <DependentUpon>QLBan.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

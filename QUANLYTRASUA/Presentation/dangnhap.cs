@@ -40,12 +40,22 @@ namespace WindowsFormsApp1.Dangnhap
 
         private void button4_Click(object sender, EventArgs e)
         {
+            if (txttendn.Text.Trim() == "" || txtmk.Text.Trim() == "")
+            {
+                MessageBox.Show(
+                    "Bạn chưa nhập thông tin, vui lòng nhập đầy đủ!",
+                    "Thông báo",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+
+                return;
+            }
             manhinhchinh mhc = new manhinhchinh();
             mhc.Show();
 
             this.Hide();
-        }
 
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             dangki dk = new dangki();

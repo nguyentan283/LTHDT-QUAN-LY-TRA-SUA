@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dangki));
             this.txtsdt = new System.Windows.Forms.TextBox();
             this.txtmatkhau = new System.Windows.Forms.TextBox();
             this.txtxnmk = new System.Windows.Forms.TextBox();
@@ -229,6 +230,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "dangki";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "dangki";

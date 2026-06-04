@@ -4,10 +4,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Net;
+using WindowsFormsApp1.Dangnhap;
 
 namespace WindowsFormsApp1.Presentation
 {
@@ -79,6 +80,13 @@ namespace WindowsFormsApp1.Presentation
         private void timer1_Tick(object sender, EventArgs e)
         {
             lbltimer.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+        }
+
+        private void btndangxuat_Click(object sender, EventArgs e)
+        {
+            dangnhap dn = new dangnhap();
+            dn.Show();
+            this.Hide();
         }
     }
 }

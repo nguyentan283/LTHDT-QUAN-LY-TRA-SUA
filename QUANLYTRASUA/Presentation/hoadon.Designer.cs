@@ -72,6 +72,9 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.dgvdsctm = new System.Windows.Forms.DataGridView();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -86,6 +89,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.btnhoadon);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
@@ -524,12 +528,38 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // panel17
+            // 
+            this.panel17.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel17.Location = new System.Drawing.Point(214, -1);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(10, 543);
+            this.panel17.TabIndex = 31;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel5.Location = new System.Drawing.Point(0, 1);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(10, 543);
+            this.panel5.TabIndex = 32;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel13.Location = new System.Drawing.Point(0, 1);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(225, 10);
+            this.panel13.TabIndex = 32;
+            // 
             // hoadon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1026, 546);
+            this.Controls.Add(this.panel13);
+            this.Controls.Add(this.panel17);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.lbltimer);
             this.Controls.Add(this.pictureBox4);
@@ -601,5 +631,8 @@
         private System.Windows.Forms.ComboBox cbophucvu;
         private System.Windows.Forms.ComboBox cbokh;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel17;
+        private System.Windows.Forms.Panel panel13;
     }
 }

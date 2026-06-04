@@ -209,5 +209,11 @@
   <ItemGroup>
     <None Include="Resources\hahsas.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\boba.png" />
+    <Content Include="Images\tsmaucam.png" />
+    <Content Include="Images\tsmauxanh.png" />
+    <Content Include="Images\tsvietquat.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

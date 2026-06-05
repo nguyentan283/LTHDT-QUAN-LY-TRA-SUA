@@ -220,6 +220,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\boba.png" />
+    <Content Include="Images\bx.png" />
+    <Content Include="Images\ktc.png" />
     <Content Include="Images\tsbh.png" />
     <Content Include="Images\tsd.png" />
     <Content Include="Images\tskm.png" />

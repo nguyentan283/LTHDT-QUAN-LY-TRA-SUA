@@ -147,6 +147,7 @@
             this.btnquanlyban.TabIndex = 8;
             this.btnquanlyban.Text = "Quản lý bàn";
             this.btnquanlyban.UseVisualStyleBackColor = false;
+            this.btnquanlyban.Click += new System.EventHandler(this.btnquanlyban_Click);
             // 
             // btnmenu
             // 

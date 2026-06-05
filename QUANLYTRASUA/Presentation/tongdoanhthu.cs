@@ -110,5 +110,12 @@ namespace WindowsFormsApp1.Presentation
             hd.Show();
             this.Hide();
         }
+
+        private void btnquanlyban_Click(object sender, EventArgs e)
+        {
+            Ban qlb = new Ban();
+            qlb.Show();
+            this.Hide();
+        }
     }
 }

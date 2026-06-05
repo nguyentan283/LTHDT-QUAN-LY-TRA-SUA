@@ -142,6 +142,7 @@
             this.btnquanlyban.TabIndex = 8;
             this.btnquanlyban.Text = "Quản lý bàn";
             this.btnquanlyban.UseVisualStyleBackColor = false;
+            this.btnquanlyban.Click += new System.EventHandler(this.btnquanlyban_Click);
             // 
             // btnmenu
             // 
@@ -153,6 +154,7 @@
             this.btnmenu.TabIndex = 7;
             this.btnmenu.Text = "Menu";
             this.btnmenu.UseVisualStyleBackColor = false;
+            this.btnmenu.Click += new System.EventHandler(this.btnmenu_Click);
             // 
             // btnnhanvien
             // 
@@ -164,6 +166,7 @@
             this.btnnhanvien.TabIndex = 6;
             this.btnnhanvien.Text = "Nhân viên";
             this.btnnhanvien.UseVisualStyleBackColor = false;
+            this.btnnhanvien.Click += new System.EventHandler(this.btnnhanvien_Click);
             // 
             // btnTrangchu
             // 

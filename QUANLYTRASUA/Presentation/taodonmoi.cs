@@ -111,5 +111,26 @@ namespace WindowsFormsApp1.Presentation
             hd.Show();
             this.Hide();
         }
+
+        private void btnnhanvien_Click(object sender, EventArgs e)
+        {
+            nhanvien nv = new nhanvien();
+            nv.Show();
+            this.Hide();
+        }
+
+        private void btnmenu_Click(object sender, EventArgs e)
+        {
+            menu mn = new menu();
+            mn.Show();
+            this.Hide();
+        }
+
+        private void btnquanlyban_Click(object sender, EventArgs e)
+        {
+            Ban qlb = new Ban();
+            qlb.Show();
+            this.Hide();
+        }
     }
 }

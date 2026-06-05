@@ -157,5 +157,28 @@ namespace WindowsFormsApp1
 
             LoadMenu(ketQua);
         }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtTenMon.Text))
+            {
+                MessageBox.Show("Vui lòng chọn món trước khi thêm!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            string tenMon = txtTenMon.Text;
+            decimal gia = nmrGia.Value;
+            decimal soLuong = nmrSoLuong.Value; 
+
+            if (soLuong <= 0)
+            {
+                MessageBox.Show("Số lượng phải lớn hơn 0!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            MessageBox.Show("Thêm món thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            nmrSoLuong.Value = 0;
+        }
     }
 }

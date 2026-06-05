@@ -114,6 +114,7 @@ namespace WindowsFormsApp1
 
 
 
+
             LoadMenu();
         }
         private void LoadMenu(List<MonAn> danhSach = null)

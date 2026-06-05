@@ -25,9 +25,7 @@ namespace WindowsFormsApp1.Presentation
 
         private void btnTrangchu_Click(object sender, EventArgs e)
         {
-            manhinhchinh mhn = new manhinhchinh();
-            mhn.Show();
-            this.Hide();
+            
         }
 
         private void btnnhanvien_Click(object sender, EventArgs e)
@@ -57,23 +55,17 @@ namespace WindowsFormsApp1.Presentation
 
         private void btnmenu_Click(object sender, EventArgs e)
         {
-            menu mn = new menu();
-            mn.Show();
-            this.Hide();
+            
         }
 
         private void btnquanlyban_Click(object sender, EventArgs e)
         {
-            Ban qlb = new Ban();
-            qlb.Show();
-            qlb.Hide();
+            
         }
 
         private void btnhoadon_Click(object sender, EventArgs e)
         {
-            hoadon hd = new hoadon();
-            hd.Show();
-            this.Hide();
+            
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -91,6 +83,34 @@ namespace WindowsFormsApp1.Presentation
             dangnhap dn = new dangnhap();
             dn.Show();
             this.Hide();
+        }
+
+        private void btnTrangchu_Click_1(object sender, EventArgs e)
+        {
+            manhinhchinh mhn = new manhinhchinh();
+            mhn.Show();
+            this.Hide();
+        }
+
+        private void btnmenu_Click_1(object sender, EventArgs e)
+        {
+            menu mn = new menu();
+            mn.Show();
+            this.Hide();
+        }
+
+        private void btnhoadon_Click_1(object sender, EventArgs e)
+        {
+            hoadon hd = new hoadon();
+            hd.Show();
+            this.Hide();
+        }
+
+        private void btnquanlyban_Click_1(object sender, EventArgs e)
+        {
+            Ban qlb = new Ban();
+            qlb.Show();
+            qlb.Hide();
         }
     }
 }

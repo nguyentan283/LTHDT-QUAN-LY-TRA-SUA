@@ -134,5 +134,10 @@ namespace WindowsFormsApp1.Presentation
         {
 
         }
+
+        private void btnTrangchu_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

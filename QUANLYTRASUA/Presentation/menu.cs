@@ -44,23 +44,17 @@ namespace WindowsFormsApp1
 
         private void btnTrangchu_Click_1(object sender, EventArgs e)
         {
-            manhinhchinh mhn = new manhinhchinh();
-            mhn.Show();
-            this.Hide();
+            
         }
 
         private void btnnhanvien_Click_1(object sender, EventArgs e)
         {
-            nhanvien nv = new nhanvien();
-            nv.Show();
-            this.Hide();
+            
         }
 
         private void btnquanlyban_Click(object sender, EventArgs e)
         {
-            Ban qlb = new Ban();
-            qlb.Show();
-            this.Hide();
+            
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -70,9 +64,7 @@ namespace WindowsFormsApp1
 
         private void btnhoadon_Click(object sender, EventArgs e)
         {
-            hoadon hd = new hoadon();
-            hd.Show();
-            this.Hide();
+            
         }
 
         private void dgvMenu_CellClick(object sender,
@@ -179,6 +171,34 @@ namespace WindowsFormsApp1
             MessageBox.Show("Thêm món thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             nmrSoLuong.Value = 0;
+        }
+
+        private void btnTrangchu_Click_2(object sender, EventArgs e)
+        {
+            manhinhchinh mhn = new manhinhchinh();
+            mhn.Show();
+            this.Hide();
+        }
+
+        private void btnnhanvien_Click_2(object sender, EventArgs e)
+        {
+            nhanvien nv = new nhanvien();
+            nv.Show();
+            this.Hide();
+        }
+
+        private void btnquanlyban_Click_1(object sender, EventArgs e)
+        {
+            Ban qlb = new Ban();
+            qlb.Show();
+            this.Hide();
+        }
+
+        private void btnhoadon_Click_1(object sender, EventArgs e)
+        {
+            hoadon hd = new hoadon();
+            hd.Show();
+            this.Hide();
         }
     }
 }

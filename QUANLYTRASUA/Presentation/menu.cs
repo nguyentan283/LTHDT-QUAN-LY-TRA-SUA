@@ -100,10 +100,17 @@ namespace WindowsFormsApp1
         {
             //MessageBox.Show("Form đã load");
 
-            dsMon.Add(new MonAn("Trà sữa boba", 120000, @"C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\Images\boba.png" ));
-            dsMon.Add(new MonAn("Trà sữa việt quất", 45000, @"C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\Images\tsvietquat.png" ));
-            dsMon.Add(new MonAn("Trà sữa màu xanh", 45000, @"C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\Images\tsmauxanh.png" ));
-            dsMon.Add(new MonAn("Trà sữa màu cam", 45000, @"C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\Images\tsmaucam.png" ));
+            dsMon.Add(new MonAn("Trà sữa Trân Châu", 45000, @"C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\Images\boba.png" ));
+            dsMon.Add(new MonAn("Trà sữa Việt Quất", 40000, @"C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\Images\tsvq.png" ));
+            dsMon.Add(new MonAn("Trà sữa Matcha Latte", 42000, @"C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\Images\tsmc.png" ));
+            dsMon.Add(new MonAn("Trà sữa Ô Long", 45000, @"C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\Images\tsolong.png" ));
+            dsMon.Add(new MonAn("Trà sữa Khoai Môn", 45000, @"C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\Images\tskm.png"));
+            dsMon.Add(new MonAn("Trà sữa Bạc Hà", 45000, @"C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\Images\tsbh.png"));
+            dsMon.Add(new MonAn("Trà sữa Dâu", 45000, @"C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\Images\tsd.png"));
+            dsMon.Add(new MonAn("Trà sữa Phô Mai", 45000, @"C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\Images\tspm.png"));
+
+
+
 
 
 

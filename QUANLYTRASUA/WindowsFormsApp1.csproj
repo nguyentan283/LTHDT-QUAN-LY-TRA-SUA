@@ -220,9 +220,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\boba.png" />
-    <Content Include="Images\tsmaucam.png" />
-    <Content Include="Images\tsmauxanh.png" />
+    <Content Include="Images\tsbh.png" />
+    <Content Include="Images\tsd.png" />
+    <Content Include="Images\tskm.png" />
+    <Content Include="Images\tsmatcha.png" />
+    <Content Include="Images\tsmc.png" />
+    <Content Include="Images\tsolong.png" />
+    <Content Include="Images\tspm.png" />
     <Content Include="Images\tsvietquat.png" />
+    <Content Include="Images\tsvq.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

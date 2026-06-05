@@ -30,24 +30,22 @@ namespace WindowsFormsApp1.Presentation
         }
         void LoadHoaDon()
         {
-            dgvHoaDon.ColumnCount = 7;
+            dgvHoaDon.ColumnCount = 5;
 
             dgvHoaDon.Columns[0].Name = "Mã HD";
-            dgvHoaDon.Columns[4].Name = "Bàn";
-            dgvHoaDon.Columns[2].Name = "Mã NV";
-            dgvHoaDon.Columns[5].Name = "Tổng tiền";
-            dgvHoaDon.Columns[1].Name = "Ngày";
-            dgvHoaDon.Columns[3].Name = "Mã KH";
-            dgvHoaDon.Columns[6].Name = "Trạng thái";
+            dgvHoaDon.Columns[1].Name = "Bàn";
+            dgvHoaDon.Columns[2].Name = "Tổng tiền";
+            dgvHoaDon.Columns[3].Name = "Ngày";
+            dgvHoaDon.Columns[4].Name = "Trạng thái";
         }
         void Taoban()
         {
-            for (int i = 1; i <= 15; i++)
+            for (int i = 1; i <= 20; i++)
             {
                 Button btn = new Button();
                 btn.Width = 90;
                 btn.Height = 70;
-                btn.Text = "Bàn" + i;
+                btn.Text = "Bàn " + i;
                 btn.BackColor = Color.Beige;
                 btn.Tag = i;
                 btn.Click += Btn_Click;
@@ -57,9 +55,7 @@ namespace WindowsFormsApp1.Presentation
         }
         private void Btn_Click(object sender, EventArgs e)
         {
-            Button btn = (Button)sender;
-            btn.BackColor = Color.Red;
-            MessageBox.Show(btn.Text);
+            
         }
         private void button4_Click(object sender, EventArgs e)
         {
@@ -136,6 +132,11 @@ namespace WindowsFormsApp1.Presentation
         }
 
         private void btnTrangchu_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flbBan_Paint(object sender, PaintEventArgs e)
         {
 
         }

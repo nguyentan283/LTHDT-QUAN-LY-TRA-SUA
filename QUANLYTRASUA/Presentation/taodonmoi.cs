@@ -26,16 +26,16 @@ namespace WindowsFormsApp1.Presentation
         private void taodonmoi_Load(object sender, EventArgs e)
         {
             loadchitietmon();
-            dsmongoi();
+           
         }
         void loadchitietmon()
         {
-            dgvdsctm.ColumnCount = 5;
+            dgvdsctm.ColumnCount = 4;
             dgvdsctm.Columns[0].Name = "STT";
             dgvdsctm.Columns[1].Name = "Tên món";
             dgvdsctm.Columns[3].Name = "Giá bán";
             dgvdsctm.Columns[2].Name = "Số lượng";
-            dgvdsctm.Columns[4].Name = "Trạng thái";
+            
         }
         private void dgvdsctm_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -77,15 +77,7 @@ namespace WindowsFormsApp1.Presentation
             picqr.Load(url);
         
         }
-        void dsmongoi()
-        {
-            dgvdsmongoi.ColumnCount = 5;
-            dgvdsmongoi.Columns[0].Name = "STT";
-            dgvdsmongoi.Columns[1].Name = "Tên món";
-            dgvdsmongoi.Columns[3].Name = "Giá bán";
-            dgvdsmongoi.Columns[2].Name = "Số lượng";
-            dgvdsmongoi.Columns[4].Name = "Trạng thái";
-        }
+       
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 

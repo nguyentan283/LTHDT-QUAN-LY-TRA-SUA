@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp1;
+using WindowsFormsApp1.Dangnhap;
 
 namespace WindowsFormsApp1.Presentation
 {
@@ -67,6 +68,7 @@ namespace WindowsFormsApp1.Presentation
                 flpBan.Controls.Add(banNew);
             }
             CapNhatThongKeBan();
+            btnquanlyban.BackColor = Color.Peru;
         }
 
         // Hàm duyệt danh sách để đếm số lượng bàn trống và bàn đang dùng
@@ -159,7 +161,60 @@ namespace WindowsFormsApp1.Presentation
             }
         }
 
+        private void flpBan_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
+
+        private void btnquanlyban_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btndangxuat_Click(object sender, EventArgs e)
+        {
+            dangnhap dn = new dangnhap();
+            dn.Show();
+            this.Hide();
+        }
+
+        private void btnnhanvien_Click_1(object sender, EventArgs e)
+        {
+            nhanvien nv = new nhanvien();
+            nv.Show();
+            this.Hide();
+        }
+
+        private void btnmenu_Click_1(object sender, EventArgs e)
+        {
+            menu mn = new menu();
+            mn.Show();
+            this.Hide();
+        }
+
+        private void btnhoadon_Click_1(object sender, EventArgs e)
+        {
+            hoadon hd = new hoadon();
+            hd.Show();
+            this.Hide();
+        }
+
+        private void lbltimer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lbltimer.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+        }
+
+        private void btnTrangchu_Click_1(object sender, EventArgs e)
+        {
+            manhinhchinh mhc = new manhinhchinh();
+            mhc.Show();
+            this.Hide();
+        }
     }
 
 }

@@ -129,5 +129,10 @@ namespace WindowsFormsApp1.Presentation
             tdt.Show();
             this.Hide();
         }
+
+        private void dgvHoaDon_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

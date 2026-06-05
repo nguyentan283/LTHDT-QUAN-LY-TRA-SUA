@@ -35,12 +35,20 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tongdoanhthu));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnhoadon = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnquanlyban = new System.Windows.Forms.Button();
             this.btnmenu = new System.Windows.Forms.Button();
             this.btnnhanvien = new System.Windows.Forms.Button();
             this.btnTrangchu = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.lblck = new System.Windows.Forms.Label();
+            this.lbltm = new System.Windows.Forms.Label();
+            this.lbldahuy = new System.Windows.Forms.Label();
+            this.lbldtt = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.lblchuyenkhoan = new System.Windows.Forms.Label();
@@ -51,41 +59,33 @@
             this.label5 = new System.Windows.Forms.Label();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.lbldttn = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lbldtt = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.lbldthn = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btndangxuat = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label13 = new System.Windows.Forms.Label();
-            this.lbldahuy = new System.Windows.Forms.Label();
-            this.lbltm = new System.Windows.Forms.Label();
-            this.lblck = new System.Windows.Forms.Label();
-            this.lbldthn = new System.Windows.Forms.Label();
-            this.lbldttn = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbltimer = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.panel4.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
@@ -115,6 +115,27 @@
             this.btnhoadon.TabIndex = 12;
             this.btnhoadon.Text = "Hóa đơn";
             this.btnhoadon.UseVisualStyleBackColor = false;
+            this.btnhoadon.Click += new System.EventHandler(this.btnhoadon_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::WindowsFormsApp1.Properties.Resources.anh_do_an_vat_de_thuong_095145618;
+            this.pictureBox3.Location = new System.Drawing.Point(111, 389);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(82, 75);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 11;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.asas;
+            this.pictureBox2.Location = new System.Drawing.Point(32, 389);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(73, 75);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
             // 
             // btnquanlyban
             // 
@@ -163,6 +184,16 @@
             this.btnTrangchu.UseVisualStyleBackColor = false;
             this.btnTrangchu.Click += new System.EventHandler(this.btnTrangchu_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.ChatGPT_Image_16_20_40_26_thg_5__2026;
+            this.pictureBox1.Location = new System.Drawing.Point(-37, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(299, 223);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
@@ -179,6 +210,17 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(786, 475);
             this.panel3.TabIndex = 22;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Peru;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button1.Location = new System.Drawing.Point(137, 432);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(505, 32);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Xuất Báo Cáo";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // panel5
             // 
@@ -199,6 +241,42 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(683, 100);
             this.panel5.TabIndex = 12;
+            // 
+            // lblck
+            // 
+            this.lblck.AutoSize = true;
+            this.lblck.Location = new System.Drawing.Point(560, 66);
+            this.lblck.Name = "lblck";
+            this.lblck.Size = new System.Drawing.Size(41, 13);
+            this.lblck.TabIndex = 10;
+            this.lblck.Text = "label16";
+            // 
+            // lbltm
+            // 
+            this.lbltm.AutoSize = true;
+            this.lbltm.Location = new System.Drawing.Point(560, 14);
+            this.lbltm.Name = "lbltm";
+            this.lbltm.Size = new System.Drawing.Size(41, 13);
+            this.lbltm.TabIndex = 9;
+            this.lbltm.Text = "label15";
+            // 
+            // lbldahuy
+            // 
+            this.lbldahuy.AutoSize = true;
+            this.lbldahuy.Location = new System.Drawing.Point(230, 66);
+            this.lbldahuy.Name = "lbldahuy";
+            this.lbldahuy.Size = new System.Drawing.Size(41, 13);
+            this.lbldahuy.TabIndex = 8;
+            this.lbldahuy.Text = "label14";
+            // 
+            // lbldtt
+            // 
+            this.lbldtt.AutoSize = true;
+            this.lbldtt.Location = new System.Drawing.Point(230, 14);
+            this.lbldtt.Name = "lbldtt";
+            this.lbldtt.Size = new System.Drawing.Size(35, 13);
+            this.lbldtt.TabIndex = 0;
+            this.lbldtt.Text = "label1";
             // 
             // label12
             // 
@@ -301,6 +379,26 @@
             this.panel4.Size = new System.Drawing.Size(191, 207);
             this.panel4.TabIndex = 12;
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::WindowsFormsApp1.Properties.Resources.hahsas;
+            this.pictureBox5.Location = new System.Drawing.Point(55, 16);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(84, 84);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 11;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            // 
+            // lbldttn
+            // 
+            this.lbldttn.AutoSize = true;
+            this.lbldttn.Location = new System.Drawing.Point(74, 155);
+            this.lbldttn.Name = "lbldttn";
+            this.lbldttn.Size = new System.Drawing.Size(41, 13);
+            this.lbldttn.TabIndex = 1;
+            this.lbldttn.Text = "label18";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -322,14 +420,35 @@
             this.panel2.Size = new System.Drawing.Size(191, 207);
             this.panel2.TabIndex = 11;
             // 
-            // lbldtt
+            // pictureBox4
             // 
-            this.lbldtt.AutoSize = true;
-            this.lbldtt.Location = new System.Drawing.Point(230, 14);
-            this.lbldtt.Name = "lbldtt";
-            this.lbldtt.Size = new System.Drawing.Size(35, 13);
-            this.lbldtt.TabIndex = 0;
-            this.lbldtt.Text = "label1";
+            this.pictureBox4.Image = global::WindowsFormsApp1.Properties.Resources.doanhthu;
+            this.pictureBox4.Location = new System.Drawing.Point(55, 16);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(84, 84);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 10;
+            this.pictureBox4.TabStop = false;
+            // 
+            // lbldthn
+            // 
+            this.lbldthn.AutoSize = true;
+            this.lbldthn.Location = new System.Drawing.Point(82, 155);
+            this.lbldthn.Name = "lbldthn";
+            this.lbldthn.Size = new System.Drawing.Size(41, 13);
+            this.lbldthn.TabIndex = 9;
+            this.lbldthn.Text = "label17";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label13.Location = new System.Drawing.Point(28, 115);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(148, 18);
+            this.label13.TabIndex = 8;
+            this.label13.Text = "Doanh Thu Hôm Nay";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // label4
             // 
@@ -368,124 +487,6 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(191, 207);
             this.panel6.TabIndex = 15;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Peru;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button1.Location = new System.Drawing.Point(137, 432);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(505, 32);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Xuất Báo Cáo";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label13.Location = new System.Drawing.Point(28, 115);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(148, 18);
-            this.label13.TabIndex = 8;
-            this.label13.Text = "Doanh Thu Hôm Nay";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
-            // 
-            // lbldahuy
-            // 
-            this.lbldahuy.AutoSize = true;
-            this.lbldahuy.Location = new System.Drawing.Point(230, 66);
-            this.lbldahuy.Name = "lbldahuy";
-            this.lbldahuy.Size = new System.Drawing.Size(41, 13);
-            this.lbldahuy.TabIndex = 8;
-            this.lbldahuy.Text = "label14";
-            // 
-            // lbltm
-            // 
-            this.lbltm.AutoSize = true;
-            this.lbltm.Location = new System.Drawing.Point(560, 14);
-            this.lbltm.Name = "lbltm";
-            this.lbltm.Size = new System.Drawing.Size(41, 13);
-            this.lbltm.TabIndex = 9;
-            this.lbltm.Text = "label15";
-            // 
-            // lblck
-            // 
-            this.lblck.AutoSize = true;
-            this.lblck.Location = new System.Drawing.Point(560, 66);
-            this.lblck.Name = "lblck";
-            this.lblck.Size = new System.Drawing.Size(41, 13);
-            this.lblck.TabIndex = 10;
-            this.lblck.Text = "label16";
-            // 
-            // lbldthn
-            // 
-            this.lbldthn.AutoSize = true;
-            this.lbldthn.Location = new System.Drawing.Point(82, 155);
-            this.lbldthn.Name = "lbldthn";
-            this.lbldthn.Size = new System.Drawing.Size(41, 13);
-            this.lbldthn.TabIndex = 9;
-            this.lbldthn.Text = "label17";
-            // 
-            // lbldttn
-            // 
-            this.lbldttn.AutoSize = true;
-            this.lbldttn.Location = new System.Drawing.Point(74, 155);
-            this.lbldttn.Name = "lbldttn";
-            this.lbldttn.Size = new System.Drawing.Size(41, 13);
-            this.lbldttn.TabIndex = 1;
-            this.lbldttn.Text = "label18";
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::WindowsFormsApp1.Properties.Resources.hahsas;
-            this.pictureBox5.Location = new System.Drawing.Point(55, 16);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(84, 84);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 11;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::WindowsFormsApp1.Properties.Resources.doanhthu;
-            this.pictureBox4.Location = new System.Drawing.Point(55, 16);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(84, 84);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 10;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::WindowsFormsApp1.Properties.Resources.anh_do_an_vat_de_thuong_095145618;
-            this.pictureBox3.Location = new System.Drawing.Point(111, 389);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(82, 75);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 11;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.asas;
-            this.pictureBox2.Location = new System.Drawing.Point(32, 389);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(73, 75);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.ChatGPT_Image_16_20_40_26_thg_5__2026;
-            this.pictureBox1.Location = new System.Drawing.Point(-37, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(299, 223);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
             // 
             // lbltimer
             // 
@@ -546,6 +547,9 @@
             this.Text = "tongdoanhthu";
             this.Load += new System.EventHandler(this.tongdoanhthu_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -553,13 +557,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

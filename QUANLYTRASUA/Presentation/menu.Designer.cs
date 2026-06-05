@@ -45,11 +45,11 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.nmrGia = new System.Windows.Forms.NumericUpDown();
             this.nmrSoLuong = new System.Windows.Forms.NumericUpDown();
-            this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.lblSoLuong = new System.Windows.Forms.Label();
             this.txtTenMon = new System.Windows.Forms.TextBox();
@@ -58,12 +58,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.picAnhMon = new System.Windows.Forms.PictureBox();
             this.flpMenu = new System.Windows.Forms.FlowLayoutPanel();
-            this.txtTimKiem = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.mon1 = new WindowsFormsApp1.Mon();
             this.mon2 = new WindowsFormsApp1.Mon();
             this.mon3 = new WindowsFormsApp1.Mon();
@@ -71,6 +65,11 @@
             this.mon5 = new WindowsFormsApp1.Mon();
             this.mon6 = new WindowsFormsApp1.Mon();
             this.mon7 = new WindowsFormsApp1.Mon();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -268,6 +267,17 @@
             this.panel2.Size = new System.Drawing.Size(1003, 494);
             this.panel2.TabIndex = 3;
             // 
+            // label6
+            // 
+            this.label6.AllowDrop = true;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(34, 24);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(126, 22);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Tìm kiếm món:";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -283,7 +293,6 @@
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.Controls.Add(this.nmrGia);
             this.panel4.Controls.Add(this.nmrSoLuong);
-            this.panel4.Controls.Add(this.btnXoa);
             this.panel4.Controls.Add(this.btnThem);
             this.panel4.Controls.Add(this.lblSoLuong);
             this.panel4.Controls.Add(this.txtTenMon);
@@ -318,26 +327,17 @@
             this.nmrSoLuong.Size = new System.Drawing.Size(131, 22);
             this.nmrSoLuong.TabIndex = 10;
             // 
-            // btnXoa
-            // 
-            this.btnXoa.Location = new System.Drawing.Point(123, 372);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(80, 30);
-            this.btnXoa.TabIndex = 9;
-            this.btnXoa.Text = "Xóa món";
-            this.btnXoa.UseVisualStyleBackColor = true;
-            // 
             // btnThem
             // 
             this.btnThem.BackColor = System.Drawing.Color.Transparent;
-            this.btnThem.Location = new System.Drawing.Point(21, 372);
+            this.btnThem.Location = new System.Drawing.Point(66, 362);
             this.btnThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(80, 30);
+            this.btnThem.Size = new System.Drawing.Size(116, 41);
             this.btnThem.TabIndex = 8;
             this.btnThem.Text = "Thêm món";
             this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // lblSoLuong
             // 
@@ -410,64 +410,6 @@
             this.flpMenu.Name = "flpMenu";
             this.flpMenu.Size = new System.Drawing.Size(696, 414);
             this.flpMenu.TabIndex = 3;
-            // 
-            // txtTimKiem
-            // 
-            this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTimKiem.Location = new System.Drawing.Point(181, 21);
-            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(177, 27);
-            this.txtTimKiem.TabIndex = 0;
-            this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label4.Location = new System.Drawing.Point(17, 16);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 36);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Menu ";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(40, 32);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 16);
-            this.label3.TabIndex = 2;
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::WindowsFormsApp1.Properties.Resources.anahaha;
-            this.pictureBox4.Location = new System.Drawing.Point(905, 14);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(52, 50);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 19;
-            this.pictureBox4.TabStop = false;
-            // 
-            // label6
-            // 
-            this.label6.AllowDrop = true;
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(34, 24);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(126, 22);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Tìm kiếm món:";
             // 
             // mon1
             // 
@@ -546,6 +488,53 @@
             this.mon7.TabIndex = 6;
             this.mon7.TenMon = "label1";
             // 
+            // txtTimKiem
+            // 
+            this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTimKiem.Location = new System.Drawing.Point(181, 21);
+            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(177, 27);
+            this.txtTimKiem.TabIndex = 0;
+            this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label4.Location = new System.Drawing.Point(17, 16);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(98, 36);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Menu ";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(40, 32);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 16);
+            this.label3.TabIndex = 2;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::WindowsFormsApp1.Properties.Resources.anahaha;
+            this.pictureBox4.Location = new System.Drawing.Point(905, 14);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(52, 50);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 19;
+            this.pictureBox4.TabStop = false;
+            // 
             // menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -610,7 +599,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox picAnhMon;
-        private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Label lblSoLuong;
         private System.Windows.Forms.TextBox txtTenMon;

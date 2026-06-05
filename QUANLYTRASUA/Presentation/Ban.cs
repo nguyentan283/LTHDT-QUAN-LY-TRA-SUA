@@ -180,23 +180,17 @@ namespace WindowsFormsApp1.Presentation
 
         private void btnnhanvien_Click_1(object sender, EventArgs e)
         {
-            nhanvien nv = new nhanvien();
-            nv.Show();
-            this.Hide();
+            
         }
 
         private void btnmenu_Click_1(object sender, EventArgs e)
         {
-            menu mn = new menu();
-            mn.Show();
-            this.Hide();
+            
         }
 
         private void btnhoadon_Click_1(object sender, EventArgs e)
         {
-            hoadon hd = new hoadon();
-            hd.Show();
-            this.Hide();
+            
         }
 
         private void lbltimer_Click(object sender, EventArgs e)
@@ -211,8 +205,34 @@ namespace WindowsFormsApp1.Presentation
 
         private void btnTrangchu_Click_1(object sender, EventArgs e)
         {
+            
+        }
+
+        private void btnTrangchu_Click_2(object sender, EventArgs e)
+        {
             manhinhchinh mhc = new manhinhchinh();
             mhc.Show();
+            this.Hide();
+        }
+
+        private void btnnhanvien_Click_2(object sender, EventArgs e)
+        {
+            nhanvien nv = new nhanvien();
+            nv.Show();
+            this.Hide();
+        }
+
+        private void btnmenu_Click_2(object sender, EventArgs e)
+        {
+            menu mn = new menu();
+            mn.Show();
+            this.Hide();
+        }
+
+        private void btnhoadon_Click_2(object sender, EventArgs e)
+        {
+            hoadon hd = new hoadon();
+            hd.Show();
             this.Hide();
         }
     }

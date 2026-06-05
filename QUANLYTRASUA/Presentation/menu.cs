@@ -102,7 +102,7 @@ namespace WindowsFormsApp1
             dsMon.Add(new MonAn("Trà sữa Phô Mai", 42000, @"C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\Images\tspm.png"));
             dsMon.Add(new MonAn("Khoai Tây Chiên", 20000, @"C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\Images\ktc.png"));
             dsMon.Add(new MonAn("Bắp Xào", 20000, @"C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\Images\bx.png"));
-
+            btnmenu.BackColor = Color.Peru;
 
 
 

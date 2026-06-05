@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(manhinhchinh));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnTrangchu = new System.Windows.Forms.Button();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -48,8 +49,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvHoaDon = new System.Windows.Forms.DataGridView();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.flbBan = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button9 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -61,16 +60,17 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.btnTrangchu = new System.Windows.Forms.Button();
+            this.flbBan = new System.Windows.Forms.FlowLayoutPanel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).BeginInit();
-            this.groupBox2.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -90,16 +90,32 @@
             this.panel1.Controls.Add(this.btnnhanvien);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(-7, -1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(299, 670);
             this.panel1.TabIndex = 4;
+            // 
+            // btnTrangchu
+            // 
+            this.btnTrangchu.BackColor = System.Drawing.Color.White;
+            this.btnTrangchu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnTrangchu.Image = ((System.Drawing.Image)(resources.GetObject("btnTrangchu.Image")));
+            this.btnTrangchu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTrangchu.Location = new System.Drawing.Point(78, 282);
+            this.btnTrangchu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTrangchu.Name = "btnTrangchu";
+            this.btnTrangchu.Size = new System.Drawing.Size(145, 42);
+            this.btnTrangchu.TabIndex = 21;
+            this.btnTrangchu.Text = "Trang chủ";
+            this.btnTrangchu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTrangchu.UseVisualStyleBackColor = false;
+            this.btnTrangchu.Click += new System.EventHandler(this.btnTrangchu_Click_1);
             // 
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.SandyBrown;
             this.panel12.Location = new System.Drawing.Point(0, 0);
-            this.panel12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel12.Margin = new System.Windows.Forms.Padding(4);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(312, 16);
             this.panel12.TabIndex = 20;
@@ -108,7 +124,7 @@
             // 
             this.panel11.BackColor = System.Drawing.Color.SandyBrown;
             this.panel11.Location = new System.Drawing.Point(9, 658);
-            this.panel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel11.Margin = new System.Windows.Forms.Padding(4);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(289, 12);
             this.panel11.TabIndex = 19;
@@ -117,7 +133,7 @@
             // 
             this.panel10.BackColor = System.Drawing.Color.SandyBrown;
             this.panel10.Location = new System.Drawing.Point(11, 262);
-            this.panel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(284, 12);
             this.panel10.TabIndex = 18;
@@ -126,7 +142,7 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.SandyBrown;
             this.panel6.Location = new System.Drawing.Point(285, 0);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(13, 674);
             this.panel6.TabIndex = 19;
@@ -135,7 +151,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.SandyBrown;
             this.panel5.Location = new System.Drawing.Point(4, 0);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(13, 674);
             this.panel5.TabIndex = 18;
@@ -148,7 +164,7 @@
             this.btnhoadon.Image = ((System.Drawing.Image)(resources.GetObject("btnhoadon.Image")));
             this.btnhoadon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnhoadon.Location = new System.Drawing.Point(85, 430);
-            this.btnhoadon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnhoadon.Margin = new System.Windows.Forms.Padding(4);
             this.btnhoadon.Name = "btnhoadon";
             this.btnhoadon.Size = new System.Drawing.Size(132, 42);
             this.btnhoadon.TabIndex = 12;
@@ -161,7 +177,7 @@
             // 
             this.pictureBox3.Image = global::WindowsFormsApp1.Properties.Resources.anh_do_an_vat_de_thuong_095145618;
             this.pictureBox3.Location = new System.Drawing.Point(148, 479);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(109, 92);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -173,7 +189,7 @@
             // 
             this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.asas;
             this.pictureBox2.Location = new System.Drawing.Point(43, 479);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(97, 92);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -187,7 +203,7 @@
             this.btnquanlyban.Image = ((System.Drawing.Image)(resources.GetObject("btnquanlyban.Image")));
             this.btnquanlyban.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnquanlyban.Location = new System.Drawing.Point(70, 579);
-            this.btnquanlyban.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnquanlyban.Margin = new System.Windows.Forms.Padding(4);
             this.btnquanlyban.Name = "btnquanlyban";
             this.btnquanlyban.Size = new System.Drawing.Size(167, 43);
             this.btnquanlyban.TabIndex = 8;
@@ -203,7 +219,7 @@
             this.btnmenu.Image = ((System.Drawing.Image)(resources.GetObject("btnmenu.Image")));
             this.btnmenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnmenu.Location = new System.Drawing.Point(96, 380);
-            this.btnmenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnmenu.Margin = new System.Windows.Forms.Padding(4);
             this.btnmenu.Name = "btnmenu";
             this.btnmenu.Size = new System.Drawing.Size(112, 42);
             this.btnmenu.TabIndex = 7;
@@ -219,7 +235,7 @@
             this.btnnhanvien.Image = ((System.Drawing.Image)(resources.GetObject("btnnhanvien.Image")));
             this.btnnhanvien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnnhanvien.Location = new System.Drawing.Point(78, 332);
-            this.btnnhanvien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnnhanvien.Margin = new System.Windows.Forms.Padding(4);
             this.btnnhanvien.Name = "btnnhanvien";
             this.btnnhanvien.Size = new System.Drawing.Size(145, 42);
             this.btnnhanvien.TabIndex = 6;
@@ -232,7 +248,7 @@
             // 
             this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.ChatGPT_Image_16_20_40_26_thg_5__2026;
             this.pictureBox1.Location = new System.Drawing.Point(-49, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(399, 274);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -244,7 +260,7 @@
             this.btndangxuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btndangxuat.ForeColor = System.Drawing.Color.Black;
             this.btndangxuat.Location = new System.Drawing.Point(131, 508);
-            this.btndangxuat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btndangxuat.Margin = new System.Windows.Forms.Padding(4);
             this.btndangxuat.Name = "btndangxuat";
             this.btndangxuat.Size = new System.Drawing.Size(117, 31);
             this.btndangxuat.TabIndex = 10;
@@ -255,7 +271,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(965, 39);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(215, 22);
             this.textBox2.TabIndex = 5;
@@ -275,10 +291,11 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.groupBox1.Controls.Add(this.dgvHoaDon);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(351, 118);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(713, 238);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
@@ -288,35 +305,12 @@
             // 
             this.dgvHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvHoaDon.Location = new System.Drawing.Point(8, 38);
-            this.dgvHoaDon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvHoaDon.Margin = new System.Windows.Forms.Padding(4);
             this.dgvHoaDon.Name = "dgvHoaDon";
             this.dgvHoaDon.RowHeadersWidth = 51;
             this.dgvHoaDon.Size = new System.Drawing.Size(697, 192);
             this.dgvHoaDon.TabIndex = 0;
             this.dgvHoaDon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHoaDon_CellContentClick);
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.groupBox2.Controls.Add(this.flbBan);
-            this.groupBox2.Location = new System.Drawing.Point(351, 377);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox2.Size = new System.Drawing.Size(713, 281);
-            this.groupBox2.TabIndex = 8;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Sơ đồ bàn";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
-            // 
-            // flbBan
-            // 
-            this.flbBan.AutoScroll = true;
-            this.flbBan.Location = new System.Drawing.Point(8, 34);
-            this.flbBan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.flbBan.Name = "flbBan";
-            this.flbBan.Size = new System.Drawing.Size(697, 239);
-            this.flbBan.TabIndex = 0;
             // 
             // panel2
             // 
@@ -325,7 +319,7 @@
             this.panel2.Controls.Add(this.button7);
             this.panel2.Controls.Add(this.btndangxuat);
             this.panel2.Location = new System.Drawing.Point(1104, 118);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(248, 539);
             this.panel2.TabIndex = 12;
@@ -335,7 +329,7 @@
             this.button9.BackgroundImage = global::WindowsFormsApp1.Properties.Resources._7e04c7b1858504db5d94;
             this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button9.Location = new System.Drawing.Point(28, 302);
-            this.button9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button9.Margin = new System.Windows.Forms.Padding(4);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(195, 172);
             this.button9.TabIndex = 11;
@@ -347,7 +341,7 @@
             this.button7.BackgroundImage = global::WindowsFormsApp1.Properties.Resources._98acf1dfb0eb31b568fa;
             this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button7.Location = new System.Drawing.Point(28, 87);
-            this.button7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button7.Margin = new System.Windows.Forms.Padding(4);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(195, 172);
             this.button7.TabIndex = 9;
@@ -358,7 +352,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.panel3.Location = new System.Drawing.Point(320, 84);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1048, 585);
             this.panel3.TabIndex = 14;
@@ -385,7 +379,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.SandyBrown;
             this.panel4.Location = new System.Drawing.Point(320, 84);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(13, 586);
             this.panel4.TabIndex = 17;
@@ -394,7 +388,7 @@
             // 
             this.panel7.BackColor = System.Drawing.Color.SandyBrown;
             this.panel7.Location = new System.Drawing.Point(320, 84);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1044, 12);
             this.panel7.TabIndex = 18;
@@ -403,7 +397,7 @@
             // 
             this.panel8.BackColor = System.Drawing.Color.SandyBrown;
             this.panel8.Location = new System.Drawing.Point(320, 661);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(1044, 12);
             this.panel8.TabIndex = 19;
@@ -412,7 +406,7 @@
             // 
             this.panel9.BackColor = System.Drawing.Color.SandyBrown;
             this.panel9.Location = new System.Drawing.Point(1355, 82);
-            this.panel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(13, 588);
             this.panel9.TabIndex = 18;
@@ -421,28 +415,37 @@
             // 
             this.pictureBox4.Image = global::WindowsFormsApp1.Properties.Resources.anahaha;
             this.pictureBox4.Location = new System.Drawing.Point(905, 14);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(52, 50);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 15;
             this.pictureBox4.TabStop = false;
             // 
-            // btnTrangchu
+            // flbBan
             // 
-            this.btnTrangchu.BackColor = System.Drawing.Color.White;
-            this.btnTrangchu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnTrangchu.Image = ((System.Drawing.Image)(resources.GetObject("btnTrangchu.Image")));
-            this.btnTrangchu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTrangchu.Location = new System.Drawing.Point(78, 282);
-            this.btnTrangchu.Margin = new System.Windows.Forms.Padding(4);
-            this.btnTrangchu.Name = "btnTrangchu";
-            this.btnTrangchu.Size = new System.Drawing.Size(145, 42);
-            this.btnTrangchu.TabIndex = 21;
-            this.btnTrangchu.Text = "Trang chủ";
-            this.btnTrangchu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnTrangchu.UseVisualStyleBackColor = false;
-            this.btnTrangchu.Click += new System.EventHandler(this.btnTrangchu_Click_1);
+            this.flbBan.AutoScroll = true;
+            this.flbBan.Location = new System.Drawing.Point(8, 34);
+            this.flbBan.Margin = new System.Windows.Forms.Padding(4);
+            this.flbBan.Name = "flbBan";
+            this.flbBan.Size = new System.Drawing.Size(697, 239);
+            this.flbBan.TabIndex = 0;
+            this.flbBan.Paint += new System.Windows.Forms.PaintEventHandler(this.flbBan_Paint);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.groupBox2.Controls.Add(this.flbBan);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(351, 377);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(713, 281);
+            this.groupBox2.TabIndex = 8;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Sơ đồ bàn";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // manhinhchinh
             // 
@@ -465,7 +468,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "manhinhchinh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "manhinhchinh";
@@ -476,9 +479,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).EndInit();
-            this.groupBox2.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -498,8 +501,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dgvHoaDon;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.FlowLayoutPanel flbBan;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Panel panel2;
@@ -518,5 +519,7 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Button btnTrangchu;
+        private System.Windows.Forms.FlowLayoutPanel flbBan;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }

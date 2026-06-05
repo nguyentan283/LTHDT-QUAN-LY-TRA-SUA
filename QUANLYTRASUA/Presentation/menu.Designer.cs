@@ -31,6 +31,11 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(menu));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnquanlyban = new System.Windows.Forms.Button();
+            this.btnTrangchu = new System.Windows.Forms.Button();
+            this.btnhoadon = new System.Windows.Forms.Button();
+            this.btnmenu = new System.Windows.Forms.Button();
+            this.btnnhanvien = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -65,11 +70,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.btnTrangchu = new System.Windows.Forms.Button();
-            this.btnhoadon = new System.Windows.Forms.Button();
-            this.btnmenu = new System.Windows.Forms.Button();
-            this.btnnhanvien = new System.Windows.Forms.Button();
-            this.btnquanlyban = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -100,6 +100,86 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(299, 670);
             this.panel1.TabIndex = 6;
+            // 
+            // btnquanlyban
+            // 
+            this.btnquanlyban.BackColor = System.Drawing.Color.White;
+            this.btnquanlyban.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnquanlyban.Image = ((System.Drawing.Image)(resources.GetObject("btnquanlyban.Image")));
+            this.btnquanlyban.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnquanlyban.Location = new System.Drawing.Point(72, 578);
+            this.btnquanlyban.Margin = new System.Windows.Forms.Padding(4);
+            this.btnquanlyban.Name = "btnquanlyban";
+            this.btnquanlyban.Size = new System.Drawing.Size(167, 43);
+            this.btnquanlyban.TabIndex = 26;
+            this.btnquanlyban.Text = "Quản lý bàn";
+            this.btnquanlyban.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnquanlyban.UseVisualStyleBackColor = false;
+            this.btnquanlyban.Click += new System.EventHandler(this.btnquanlyban_Click_1);
+            // 
+            // btnTrangchu
+            // 
+            this.btnTrangchu.BackColor = System.Drawing.Color.White;
+            this.btnTrangchu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnTrangchu.Image = ((System.Drawing.Image)(resources.GetObject("btnTrangchu.Image")));
+            this.btnTrangchu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTrangchu.Location = new System.Drawing.Point(81, 282);
+            this.btnTrangchu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTrangchu.Name = "btnTrangchu";
+            this.btnTrangchu.Size = new System.Drawing.Size(145, 42);
+            this.btnTrangchu.TabIndex = 25;
+            this.btnTrangchu.Text = "Trang chủ";
+            this.btnTrangchu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTrangchu.UseVisualStyleBackColor = false;
+            this.btnTrangchu.Click += new System.EventHandler(this.btnTrangchu_Click_2);
+            // 
+            // btnhoadon
+            // 
+            this.btnhoadon.BackColor = System.Drawing.Color.White;
+            this.btnhoadon.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnhoadon.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnhoadon.Image = ((System.Drawing.Image)(resources.GetObject("btnhoadon.Image")));
+            this.btnhoadon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnhoadon.Location = new System.Drawing.Point(88, 430);
+            this.btnhoadon.Margin = new System.Windows.Forms.Padding(4);
+            this.btnhoadon.Name = "btnhoadon";
+            this.btnhoadon.Size = new System.Drawing.Size(132, 42);
+            this.btnhoadon.TabIndex = 24;
+            this.btnhoadon.Text = "     Hóa đơn";
+            this.btnhoadon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnhoadon.UseVisualStyleBackColor = false;
+            this.btnhoadon.Click += new System.EventHandler(this.btnhoadon_Click_1);
+            // 
+            // btnmenu
+            // 
+            this.btnmenu.BackColor = System.Drawing.Color.White;
+            this.btnmenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnmenu.Image = ((System.Drawing.Image)(resources.GetObject("btnmenu.Image")));
+            this.btnmenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnmenu.Location = new System.Drawing.Point(99, 380);
+            this.btnmenu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnmenu.Name = "btnmenu";
+            this.btnmenu.Size = new System.Drawing.Size(112, 42);
+            this.btnmenu.TabIndex = 23;
+            this.btnmenu.Text = "   Menu";
+            this.btnmenu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnmenu.UseVisualStyleBackColor = false;
+            // 
+            // btnnhanvien
+            // 
+            this.btnnhanvien.BackColor = System.Drawing.Color.White;
+            this.btnnhanvien.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnnhanvien.Image = ((System.Drawing.Image)(resources.GetObject("btnnhanvien.Image")));
+            this.btnnhanvien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnnhanvien.Location = new System.Drawing.Point(81, 332);
+            this.btnnhanvien.Margin = new System.Windows.Forms.Padding(4);
+            this.btnnhanvien.Name = "btnnhanvien";
+            this.btnnhanvien.Size = new System.Drawing.Size(145, 42);
+            this.btnnhanvien.TabIndex = 22;
+            this.btnnhanvien.Text = "Nhân viên";
+            this.btnnhanvien.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnnhanvien.UseVisualStyleBackColor = false;
+            this.btnnhanvien.Click += new System.EventHandler(this.btnnhanvien_Click_2);
             // 
             // pictureBox3
             // 
@@ -145,6 +225,7 @@
             this.btndangxuat.TabIndex = 10;
             this.btndangxuat.Text = "ĐĂNG XUẤT";
             this.btndangxuat.UseVisualStyleBackColor = false;
+            this.btndangxuat.Click += new System.EventHandler(this.btndangxuat_Click);
             // 
             // lbltimer
             // 
@@ -470,86 +551,6 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 19;
             this.pictureBox4.TabStop = false;
-            // 
-            // btnTrangchu
-            // 
-            this.btnTrangchu.BackColor = System.Drawing.Color.White;
-            this.btnTrangchu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnTrangchu.Image = ((System.Drawing.Image)(resources.GetObject("btnTrangchu.Image")));
-            this.btnTrangchu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTrangchu.Location = new System.Drawing.Point(81, 282);
-            this.btnTrangchu.Margin = new System.Windows.Forms.Padding(4);
-            this.btnTrangchu.Name = "btnTrangchu";
-            this.btnTrangchu.Size = new System.Drawing.Size(145, 42);
-            this.btnTrangchu.TabIndex = 25;
-            this.btnTrangchu.Text = "Trang chủ";
-            this.btnTrangchu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnTrangchu.UseVisualStyleBackColor = false;
-            this.btnTrangchu.Click += new System.EventHandler(this.btnTrangchu_Click_2);
-            // 
-            // btnhoadon
-            // 
-            this.btnhoadon.BackColor = System.Drawing.Color.White;
-            this.btnhoadon.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnhoadon.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnhoadon.Image = ((System.Drawing.Image)(resources.GetObject("btnhoadon.Image")));
-            this.btnhoadon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnhoadon.Location = new System.Drawing.Point(88, 430);
-            this.btnhoadon.Margin = new System.Windows.Forms.Padding(4);
-            this.btnhoadon.Name = "btnhoadon";
-            this.btnhoadon.Size = new System.Drawing.Size(132, 42);
-            this.btnhoadon.TabIndex = 24;
-            this.btnhoadon.Text = "     Hóa đơn";
-            this.btnhoadon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnhoadon.UseVisualStyleBackColor = false;
-            this.btnhoadon.Click += new System.EventHandler(this.btnhoadon_Click_1);
-            // 
-            // btnmenu
-            // 
-            this.btnmenu.BackColor = System.Drawing.Color.White;
-            this.btnmenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnmenu.Image = ((System.Drawing.Image)(resources.GetObject("btnmenu.Image")));
-            this.btnmenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnmenu.Location = new System.Drawing.Point(99, 380);
-            this.btnmenu.Margin = new System.Windows.Forms.Padding(4);
-            this.btnmenu.Name = "btnmenu";
-            this.btnmenu.Size = new System.Drawing.Size(112, 42);
-            this.btnmenu.TabIndex = 23;
-            this.btnmenu.Text = "   Menu";
-            this.btnmenu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnmenu.UseVisualStyleBackColor = false;
-            // 
-            // btnnhanvien
-            // 
-            this.btnnhanvien.BackColor = System.Drawing.Color.White;
-            this.btnnhanvien.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnnhanvien.Image = ((System.Drawing.Image)(resources.GetObject("btnnhanvien.Image")));
-            this.btnnhanvien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnnhanvien.Location = new System.Drawing.Point(81, 332);
-            this.btnnhanvien.Margin = new System.Windows.Forms.Padding(4);
-            this.btnnhanvien.Name = "btnnhanvien";
-            this.btnnhanvien.Size = new System.Drawing.Size(145, 42);
-            this.btnnhanvien.TabIndex = 22;
-            this.btnnhanvien.Text = "Nhân viên";
-            this.btnnhanvien.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnnhanvien.UseVisualStyleBackColor = false;
-            this.btnnhanvien.Click += new System.EventHandler(this.btnnhanvien_Click_2);
-            // 
-            // btnquanlyban
-            // 
-            this.btnquanlyban.BackColor = System.Drawing.Color.White;
-            this.btnquanlyban.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnquanlyban.Image = ((System.Drawing.Image)(resources.GetObject("btnquanlyban.Image")));
-            this.btnquanlyban.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnquanlyban.Location = new System.Drawing.Point(72, 578);
-            this.btnquanlyban.Margin = new System.Windows.Forms.Padding(4);
-            this.btnquanlyban.Name = "btnquanlyban";
-            this.btnquanlyban.Size = new System.Drawing.Size(167, 43);
-            this.btnquanlyban.TabIndex = 26;
-            this.btnquanlyban.Text = "Quản lý bàn";
-            this.btnquanlyban.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnquanlyban.UseVisualStyleBackColor = false;
-            this.btnquanlyban.Click += new System.EventHandler(this.btnquanlyban_Click_1);
             // 
             // menu
             // 

@@ -107,10 +107,7 @@ namespace WindowsFormsApp1
             dsMon.Add(new MonAn("Trà sữa Khoai Môn", 45000, @"C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\Images\tskm.png"));
             dsMon.Add(new MonAn("Trà sữa Bạc Hà", 45000, @"C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\Images\tsbh.png"));
             dsMon.Add(new MonAn("Trà sữa Dâu", 45000, @"C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\Images\tsd.png"));
-            dsMon.Add(new MonAn("Trà sữa Phô Mai", 45000, @"C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\Images\tspm.png"));
-
-
-
+            dsMon.Add(new MonAn("Trà sữa Phô Mai", 42000, @"C:\Users\HP\LTHDT-QUAN-LY-TRA-SUA\QUANLYTRASUA\Images\tspm.png"));
 
 
             LoadMenu();

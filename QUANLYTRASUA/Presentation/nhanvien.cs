@@ -34,17 +34,43 @@ namespace WindowsFormsApp1.Presentation
         }
         void loadhanvien()
         {
+            dgvnhanvien.Rows.Clear();
+            dgvnhanvien.Columns.Clear();
+
             dgvnhanvien.ColumnCount = 5;
+
             dgvnhanvien.Columns[0].Name = "Mã NV";
             dgvnhanvien.Columns[1].Name = "Họ tên";
             dgvnhanvien.Columns[2].Name = "Chức vụ";
             dgvnhanvien.Columns[3].Name = "Số DT";
             dgvnhanvien.Columns[4].Name = "Trạng thái";
 
+            dgvnhanvien.ReadOnly = true;
+
+            dgvnhanvien.SelectionMode =
+                DataGridViewSelectionMode.FullRowSelect;
+
+            dgvnhanvien.MultiSelect = false;
+
+            dgvnhanvien.AllowUserToAddRows = false;
+
+            dgvnhanvien.AutoSizeColumnsMode =
+                DataGridViewAutoSizeColumnsMode.Fill;
+
         }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-           
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row =
+                    dgvnhanvien.Rows[e.RowIndex];
+
+                txtmanv.Text = row.Cells[0].Value.ToString();
+                txthoten.Text = row.Cells[1].Value.ToString();
+                cbochucvu.Text = row.Cells[2].Value.ToString();
+                txtsdt.Text = row.Cells[3].Value.ToString();
+                cbotrangthai.Text = row.Cells[4].Value.ToString();
+            }
         }
 
         private void nhanvien_Load(object sender, EventArgs e)
@@ -111,6 +137,62 @@ namespace WindowsFormsApp1.Presentation
             Ban qlb = new Ban();
             qlb.Show();
             qlb.Hide();
+        }
+
+        private void btnthem_Click(object sender, EventArgs e)
+        {
+            dgvnhanvien.Rows.Add(
+            txtmanv.Text,
+            txthoten.Text,
+            cbochucvu.Text,
+            txtsdt.Text,
+            cbotrangthai.Text
+        );
+
+            MessageBox.Show("Thêm nhân viên thành công!");
+        }
+
+        private void btnsua_Click(object sender, EventArgs e)
+        {
+            if (dgvnhanvien.CurrentRow != null)
+            {
+                dgvnhanvien.CurrentRow.Cells[0].Value = txtmanv.Text;
+                dgvnhanvien.CurrentRow.Cells[1].Value = txthoten.Text;
+                dgvnhanvien.CurrentRow.Cells[2].Value = cbochucvu.Text;
+                dgvnhanvien.CurrentRow.Cells[3].Value = txtsdt.Text;
+                dgvnhanvien.CurrentRow.Cells[4].Value = cbotrangthai.Text;
+
+                MessageBox.Show("Cập nhật thành công!");
+            }
+        }
+
+        private void btnxoa_Click(object sender, EventArgs e)
+        {
+            if (dgvnhanvien.CurrentRow != null)
+            {
+                DialogResult rs = MessageBox.Show(
+                    "Bạn có muốn xóa nhân viên này?",
+                    "Thông báo",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question);
+
+                if (rs == DialogResult.Yes)
+                {
+                    dgvnhanvien.Rows.RemoveAt(
+                        dgvnhanvien.CurrentRow.Index);
+                }
+            }
+        }
+        void ClearData()
+        {
+            txtmanv.Clear();
+            txthoten.Clear();
+            txtsdt.Clear();
+            txtdiachi.Clear();
+            txtluongcoban.Clear();
+
+            cbochucvu.SelectedIndex = -1;
+            cbotrangthai.SelectedIndex = -1;
         }
     }
 }

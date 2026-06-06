@@ -45,6 +45,9 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btntaodon = new System.Windows.Forms.Button();
+            this.lbldsctm = new System.Windows.Forms.Label();
+            this.btnhuytaodon = new System.Windows.Forms.Button();
             this.picqr = new System.Windows.Forms.PictureBox();
             this.btntaoqr = new System.Windows.Forms.Button();
             this.txttongtien = new System.Windows.Forms.TextBox();
@@ -56,18 +59,22 @@
             this.lblmahd = new System.Windows.Forms.Label();
             this.txtmahd = new System.Windows.Forms.TextBox();
             this.txtsdt = new System.Windows.Forms.TextBox();
-            this.txtbanmangdi = new System.Windows.Forms.TextBox();
             this.lblsdt = new System.Windows.Forms.Label();
             this.lblkh = new System.Windows.Forms.Label();
             this.lblghichu = new System.Windows.Forms.Label();
             this.txtghichu = new System.Windows.Forms.TextBox();
-            this.lblbanmangdi = new System.Windows.Forms.Label();
             this.txtkh = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dgvdsctm = new System.Windows.Forms.DataGridView();
-            this.lbldsctm = new System.Windows.Forms.Label();
-            this.btnhuytaodon = new System.Windows.Forms.Button();
-            this.btnguidon = new System.Windows.Forms.Button();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -259,7 +266,8 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.panel3.Controls.Add(this.btnguidon);
+            this.panel3.Controls.Add(this.btntaodon);
+            this.panel3.Controls.Add(this.lbldsctm);
             this.panel3.Controls.Add(this.btnhuytaodon);
             this.panel3.Controls.Add(this.picqr);
             this.panel3.Controls.Add(this.btntaoqr);
@@ -276,6 +284,40 @@
             this.panel3.Size = new System.Drawing.Size(1048, 585);
             this.panel3.TabIndex = 25;
             // 
+            // btntaodon
+            // 
+            this.btntaodon.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btntaodon.Location = new System.Drawing.Point(136, 531);
+            this.btntaodon.Margin = new System.Windows.Forms.Padding(4);
+            this.btntaodon.Name = "btntaodon";
+            this.btntaodon.Size = new System.Drawing.Size(204, 42);
+            this.btntaodon.TabIndex = 32;
+            this.btntaodon.Text = "Tạo đơn";
+            this.btntaodon.UseVisualStyleBackColor = true;
+            // 
+            // lbldsctm
+            // 
+            this.lbldsctm.AutoSize = true;
+            this.lbldsctm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.lbldsctm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbldsctm.Location = new System.Drawing.Point(417, 66);
+            this.lbldsctm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbldsctm.Name = "lbldsctm";
+            this.lbldsctm.Size = new System.Drawing.Size(209, 25);
+            this.lbldsctm.TabIndex = 21;
+            this.lbldsctm.Text = "Danh sách chi tiết món";
+            // 
+            // btnhuytaodon
+            // 
+            this.btnhuytaodon.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnhuytaodon.Location = new System.Drawing.Point(637, 531);
+            this.btnhuytaodon.Margin = new System.Windows.Forms.Padding(4);
+            this.btnhuytaodon.Name = "btnhuytaodon";
+            this.btnhuytaodon.Size = new System.Drawing.Size(204, 42);
+            this.btnhuytaodon.TabIndex = 31;
+            this.btnhuytaodon.Text = "Hủy tạo đơn";
+            this.btnhuytaodon.UseVisualStyleBackColor = true;
+            // 
             // picqr
             // 
             this.picqr.Location = new System.Drawing.Point(152, 318);
@@ -290,7 +332,7 @@
             // btntaoqr
             // 
             this.btntaoqr.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btntaoqr.Location = new System.Drawing.Point(11, 318);
+            this.btntaoqr.Location = new System.Drawing.Point(27, 318);
             this.btntaoqr.Margin = new System.Windows.Forms.Padding(4);
             this.btntaoqr.Name = "btntaoqr";
             this.btntaoqr.Size = new System.Drawing.Size(117, 55);
@@ -301,7 +343,7 @@
             // 
             // txttongtien
             // 
-            this.txttongtien.Location = new System.Drawing.Point(12, 429);
+            this.txttongtien.Location = new System.Drawing.Point(20, 429);
             this.txttongtien.Margin = new System.Windows.Forms.Padding(4);
             this.txttongtien.Name = "txttongtien";
             this.txttongtien.Size = new System.Drawing.Size(132, 22);
@@ -335,7 +377,7 @@
             // 
             this.btndangxuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btndangxuat.ForeColor = System.Drawing.Color.Black;
-            this.btndangxuat.Location = new System.Drawing.Point(931, 554);
+            this.btndangxuat.Location = new System.Drawing.Point(917, 542);
             this.btndangxuat.Margin = new System.Windows.Forms.Padding(4);
             this.btndangxuat.Name = "btndangxuat";
             this.btndangxuat.Size = new System.Drawing.Size(117, 31);
@@ -361,17 +403,15 @@
             this.panel2.Controls.Add(this.lblmahd);
             this.panel2.Controls.Add(this.txtmahd);
             this.panel2.Controls.Add(this.txtsdt);
-            this.panel2.Controls.Add(this.txtbanmangdi);
             this.panel2.Controls.Add(this.lblsdt);
             this.panel2.Controls.Add(this.lblkh);
             this.panel2.Controls.Add(this.lblghichu);
             this.panel2.Controls.Add(this.txtghichu);
-            this.panel2.Controls.Add(this.lblbanmangdi);
             this.panel2.Controls.Add(this.txtkh);
-            this.panel2.Location = new System.Drawing.Point(11, 66);
+            this.panel2.Location = new System.Drawing.Point(20, 66);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(353, 244);
+            this.panel2.Size = new System.Drawing.Size(344, 244);
             this.panel2.TabIndex = 20;
             // 
             // lblmahd
@@ -396,26 +436,18 @@
             // 
             // txtsdt
             // 
-            this.txtsdt.Location = new System.Drawing.Point(148, 102);
+            this.txtsdt.Location = new System.Drawing.Point(148, 143);
             this.txtsdt.Margin = new System.Windows.Forms.Padding(4);
             this.txtsdt.Name = "txtsdt";
             this.txtsdt.Size = new System.Drawing.Size(132, 22);
             this.txtsdt.TabIndex = 6;
-            // 
-            // txtbanmangdi
-            // 
-            this.txtbanmangdi.Location = new System.Drawing.Point(148, 153);
-            this.txtbanmangdi.Margin = new System.Windows.Forms.Padding(4);
-            this.txtbanmangdi.Name = "txtbanmangdi";
-            this.txtbanmangdi.Size = new System.Drawing.Size(132, 22);
-            this.txtbanmangdi.TabIndex = 16;
             // 
             // lblsdt
             // 
             this.lblsdt.AutoSize = true;
             this.lblsdt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.lblsdt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblsdt.Location = new System.Drawing.Point(27, 103);
+            this.lblsdt.Location = new System.Drawing.Point(20, 144);
             this.lblsdt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblsdt.Name = "lblsdt";
             this.lblsdt.Size = new System.Drawing.Size(106, 20);
@@ -427,7 +459,7 @@
             this.lblkh.AutoSize = true;
             this.lblkh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.lblkh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblkh.Location = new System.Drawing.Point(27, 64);
+            this.lblkh.Location = new System.Drawing.Point(20, 83);
             this.lblkh.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblkh.Name = "lblkh";
             this.lblkh.Size = new System.Drawing.Size(97, 20);
@@ -439,7 +471,7 @@
             this.lblghichu.AutoSize = true;
             this.lblghichu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.lblghichu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblghichu.Location = new System.Drawing.Point(27, 202);
+            this.lblghichu.Location = new System.Drawing.Point(56, 198);
             this.lblghichu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblghichu.Name = "lblghichu";
             this.lblghichu.Size = new System.Drawing.Size(67, 20);
@@ -454,21 +486,9 @@
             this.txtghichu.Size = new System.Drawing.Size(132, 22);
             this.txtghichu.TabIndex = 10;
             // 
-            // lblbanmangdi
-            // 
-            this.lblbanmangdi.AutoSize = true;
-            this.lblbanmangdi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.lblbanmangdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblbanmangdi.Location = new System.Drawing.Point(27, 153);
-            this.lblbanmangdi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblbanmangdi.Name = "lblbanmangdi";
-            this.lblbanmangdi.Size = new System.Drawing.Size(103, 20);
-            this.lblbanmangdi.TabIndex = 7;
-            this.lblbanmangdi.Text = "Bàn/Mang đi";
-            // 
             // txtkh
             // 
-            this.txtkh.Location = new System.Drawing.Point(148, 59);
+            this.txtkh.Location = new System.Drawing.Point(148, 83);
             this.txtkh.Margin = new System.Windows.Forms.Padding(4);
             this.txtkh.Name = "txtkh";
             this.txtkh.Size = new System.Drawing.Size(132, 22);
@@ -478,7 +498,6 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel4.Controls.Add(this.dgvdsctm);
-            this.panel4.Controls.Add(this.lbldsctm);
             this.panel4.Location = new System.Drawing.Point(416, 66);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
@@ -487,6 +506,7 @@
             // 
             // dgvdsctm
             // 
+            this.dgvdsctm.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.dgvdsctm.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvdsctm.Location = new System.Drawing.Point(6, 42);
             this.dgvdsctm.Margin = new System.Windows.Forms.Padding(4);
@@ -496,39 +516,86 @@
             this.dgvdsctm.TabIndex = 22;
             this.dgvdsctm.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvdsctm_CellContentClick);
             // 
-            // lbldsctm
+            // panel12
             // 
-            this.lbldsctm.AutoSize = true;
-            this.lbldsctm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.lbldsctm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbldsctm.Location = new System.Drawing.Point(4, 0);
-            this.lbldsctm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbldsctm.Name = "lbldsctm";
-            this.lbldsctm.Size = new System.Drawing.Size(209, 25);
-            this.lbldsctm.TabIndex = 21;
-            this.lbldsctm.Text = "Danh sách chi tiết món";
+            this.panel12.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel12.Location = new System.Drawing.Point(0, -1);
+            this.panel12.Margin = new System.Windows.Forms.Padding(4);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(300, 16);
+            this.panel12.TabIndex = 34;
             // 
-            // btnhuytaodon
+            // panel10
             // 
-            this.btnhuytaodon.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnhuytaodon.Location = new System.Drawing.Point(637, 531);
-            this.btnhuytaodon.Margin = new System.Windows.Forms.Padding(4);
-            this.btnhuytaodon.Name = "btnhuytaodon";
-            this.btnhuytaodon.Size = new System.Drawing.Size(204, 42);
-            this.btnhuytaodon.TabIndex = 31;
-            this.btnhuytaodon.Text = "Hủy tạo đơn";
-            this.btnhuytaodon.UseVisualStyleBackColor = true;
+            this.panel10.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel10.Location = new System.Drawing.Point(11, 261);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(284, 12);
+            this.panel10.TabIndex = 27;
             // 
-            // btnguidon
+            // panel6
             // 
-            this.btnguidon.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnguidon.Location = new System.Drawing.Point(136, 531);
-            this.btnguidon.Margin = new System.Windows.Forms.Padding(4);
-            this.btnguidon.Name = "btnguidon";
-            this.btnguidon.Size = new System.Drawing.Size(204, 42);
-            this.btnguidon.TabIndex = 32;
-            this.btnguidon.Text = "Gửi đơn tới bếp";
-            this.btnguidon.UseVisualStyleBackColor = true;
+            this.panel6.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel6.Location = new System.Drawing.Point(285, -1);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(13, 674);
+            this.panel6.TabIndex = 31;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel9.Location = new System.Drawing.Point(1355, 81);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(13, 588);
+            this.panel9.TabIndex = 28;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel8.Location = new System.Drawing.Point(320, 660);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(1044, 12);
+            this.panel8.TabIndex = 32;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel7.Location = new System.Drawing.Point(320, 83);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(1044, 12);
+            this.panel7.TabIndex = 29;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel5.Location = new System.Drawing.Point(320, 83);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(13, 586);
+            this.panel5.TabIndex = 26;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel11.Location = new System.Drawing.Point(9, 657);
+            this.panel11.Margin = new System.Windows.Forms.Padding(4);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(289, 12);
+            this.panel11.TabIndex = 33;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel13.Location = new System.Drawing.Point(4, -1);
+            this.panel13.Margin = new System.Windows.Forms.Padding(4);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(13, 674);
+            this.panel13.TabIndex = 30;
             // 
             // taodonmoi
             // 
@@ -536,6 +603,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1368, 672);
+            this.Controls.Add(this.panel12);
+            this.Controls.Add(this.panel10);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel9);
+            this.Controls.Add(this.panel8);
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel11);
+            this.Controls.Add(this.panel13);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.lbltimer);
             this.Controls.Add(this.pictureBox4);
@@ -559,7 +635,6 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdsctm)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -581,10 +656,8 @@
         private System.Windows.Forms.Button btnthanhtoan;
         private System.Windows.Forms.Button btndangxuat;
         private System.Windows.Forms.Label lbldsctm;
-        private System.Windows.Forms.TextBox txtbanmangdi;
         private System.Windows.Forms.TextBox txtghichu;
         private System.Windows.Forms.Label lblghichu;
-        private System.Windows.Forms.Label lblbanmangdi;
         private System.Windows.Forms.Label lblkh;
         private System.Windows.Forms.TextBox txtkh;
         private System.Windows.Forms.Label lblsdt;
@@ -604,7 +677,16 @@
         private System.Windows.Forms.Button btnhoadon;
         private System.Windows.Forms.Button btnmenu;
         private System.Windows.Forms.Button btnnhanvien;
-        private System.Windows.Forms.Button btnguidon;
         private System.Windows.Forms.Button btnhuytaodon;
+        private System.Windows.Forms.Button btntaodon;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel panel13;
     }
 }

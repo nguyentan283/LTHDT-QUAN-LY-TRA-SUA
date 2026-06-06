@@ -111,21 +111,6 @@ namespace WindowsFormsApp1.Presentation
         {
 
         }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            taodonmoi tdm = new taodonmoi();
-            tdm.Show();
-            this.Hide();
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-            tongdoanhthu tdt = new tongdoanhthu();
-            tdt.Show();
-            this.Hide();
-        }
-
         private void dgvHoaDon_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -139,6 +124,20 @@ namespace WindowsFormsApp1.Presentation
         private void flbBan_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btntaodonmoi_Click(object sender, EventArgs e)
+        {
+            taodonmoi tdm = new taodonmoi();
+            tdm.Show();
+            this.Hide();
+        }
+
+        private void btntongdt_Click(object sender, EventArgs e)
+        {
+            tongdoanhthu tdt = new tongdoanhthu();
+            tdt.Show();
+            this.Hide();
         }
     }
 }

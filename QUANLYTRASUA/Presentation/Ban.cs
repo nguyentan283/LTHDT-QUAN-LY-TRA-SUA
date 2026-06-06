@@ -61,8 +61,6 @@ namespace WindowsFormsApp1.Presentation
             {
                 QLBan banNew = new QLBan();
                 banNew.ThietLapBan(i, "Trống");
-
-                // Đăng ký sự kiện Click chuẩn, không dùng chung với Paint!
                 banNew.DangKySuKienClick(BanAn_Click);
 
                 flpBan.Controls.Add(banNew);
@@ -70,14 +68,10 @@ namespace WindowsFormsApp1.Presentation
             CapNhatThongKeBan();
             btnquanlyban.BackColor = Color.Peru;
         }
-
-        // Hàm duyệt danh sách để đếm số lượng bàn trống và bàn đang dùng
         private void CapNhatThongKeBan()
         {
             int soBanTrong = 0;
             int soBanDangDung = 0;
-
-            // Duyệt qua tất cả linh kiện đang nằm inside khung flpBan
             foreach (Control item in flpBan.Controls)
             {
                 if (item is QLBan)
@@ -94,14 +88,10 @@ namespace WindowsFormsApp1.Presentation
                     }
                 }
             }
-
-            // Gán giá trị số vừa đếm được vào chữ hiển thị của các Label bên góc phải
             lblSoBanTrong.Text = soBanTrong.ToString();
             lblSoBanDangDung.Text = soBanDangDung.ToString();
-            lblSoBanCanPhucVu.Text = "0"; // Dòng thứ 3 đặt mặc định bằng 0 hoặc tùy biến sau
+            lblSoBanCanPhucVu.Text = "0";
         }
-
-        // Hàm xử lý sự kiện khi người dùng click chuột vào bất kỳ vị trí nào trên một ô bàn ăn
         private void BanAn_Click(object sender, EventArgs e)
         {
             Control ctrl = (Control)sender;
@@ -110,18 +100,12 @@ namespace WindowsFormsApp1.Presentation
             {
                 ctrl = ctrl.Parent;
             }
-
-            // Kiểm tra an toàn trước khi ép kiểu
             if (ctrl != null)
             {
                 banDangChonHienTai = (QLBan)ctrl;
                 MessageBox.Show("Đã chọn: Bàn số " + banDangChonHienTai.SoThuTuBan + " (Trạng thái: " + banDangChonHienTai.TrangThai + ")");
             }
         }
-
-
-
-        // Luồng xử lý khi người dùng ấn vào nút "Hủy đặt bàn"
         private void btnHuyDatBan_Click(object sender, EventArgs e)
         {
             if (banDangChonHienTai == null)
@@ -129,11 +113,7 @@ namespace WindowsFormsApp1.Presentation
                 MessageBox.Show("Vui lòng click chuột chọn một cái bàn ở lưới bên trái trước!");
                 return;
             }
-
-            // Đưa trạng thái bàn quay về chữ "Trống", hàm ThietLapBan sẽ tự động đổi màu nền sang xanh lá cây
             banDangChonHienTai.ThietLapBan(banDangChonHienTai.SoThuTuBan, "Trống");
-
-            // Tính toán lại bảng thống kê số liệu bên phải
             CapNhatThongKeBan();
             MessageBox.Show("Đã hủy trạng thái bàn số " + banDangChonHienTai.SoThuTuBan + " về Trống thành công!");
         }
@@ -145,13 +125,9 @@ namespace WindowsFormsApp1.Presentation
                 MessageBox.Show("Vui lòng click chuột chọn một cái bàn ở lưới bên trái trước!");
                 return;
             }
-
-            // Chỉ cho phép chuyển sang Đang dùng nếu bàn đó thực sự đang trống màu xanh
             if (banDangChonHienTai.TrangThai == "Trống")
             {
-                banDangChonHienTai.ThietLapBan(banDangChonHienTai.SoThuTuBan, "Đang dùng");
-
-                // Tính toán lại bảng thống kê số liệu bên phải
+                banDangChonHienTai.ThietLapBan(banDangChonHienTai.SoThuTuBan, "Đang dùng");   
                 CapNhatThongKeBan();
                 MessageBox.Show("Mở bàn số " + banDangChonHienTai.SoThuTuBan + " thành công!");
             }
@@ -234,6 +210,11 @@ namespace WindowsFormsApp1.Presentation
             hoadon hd = new hoadon();
             hd.Show();
             this.Hide();
+        }
+
+        private void Ban_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 

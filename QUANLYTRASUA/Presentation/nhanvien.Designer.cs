@@ -48,7 +48,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtdiachi = new System.Windows.Forms.TextBox();
             this.cbotrangthai = new System.Windows.Forms.ComboBox();
             this.cbochucvu = new System.Windows.Forms.ComboBox();
             this.lbltrangthai = new System.Windows.Forms.Label();
@@ -69,6 +69,15 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -214,7 +223,7 @@
             // 
             this.btndangxuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btndangxuat.ForeColor = System.Drawing.Color.Black;
-            this.btndangxuat.Location = new System.Drawing.Point(931, 556);
+            this.btndangxuat.Location = new System.Drawing.Point(511, 475);
             this.btndangxuat.Margin = new System.Windows.Forms.Padding(4);
             this.btndangxuat.Name = "btndangxuat";
             this.btndangxuat.Size = new System.Drawing.Size(117, 31);
@@ -229,7 +238,6 @@
             this.panel3.Controls.Add(this.btnxoa);
             this.panel3.Controls.Add(this.btnthem);
             this.panel3.Controls.Add(this.btnsua);
-            this.panel3.Controls.Add(this.btndangxuat);
             this.panel3.Controls.Add(this.lbldanhsachnv);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.label3);
@@ -251,6 +259,7 @@
             this.btnxoa.TabIndex = 17;
             this.btnxoa.Text = "Xóa";
             this.btnxoa.UseVisualStyleBackColor = true;
+            this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click);
             // 
             // btnthem
             // 
@@ -262,6 +271,7 @@
             this.btnthem.TabIndex = 14;
             this.btnthem.Text = "Thêm";
             this.btnthem.UseVisualStyleBackColor = true;
+            this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
             // 
             // btnsua
             // 
@@ -273,6 +283,7 @@
             this.btnsua.TabIndex = 18;
             this.btnsua.Text = "Sửa";
             this.btnsua.UseVisualStyleBackColor = true;
+            this.btnsua.Click += new System.EventHandler(this.btnsua_Click);
             // 
             // lbldanhsachnv
             // 
@@ -310,7 +321,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.txtdiachi);
             this.panel2.Controls.Add(this.cbotrangthai);
             this.panel2.Controls.Add(this.cbochucvu);
             this.panel2.Controls.Add(this.lbltrangthai);
@@ -330,14 +341,14 @@
             this.panel2.Size = new System.Drawing.Size(385, 498);
             this.panel2.TabIndex = 0;
             // 
-            // textBox1
+            // txtdiachi
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox1.Location = new System.Drawing.Point(191, 199);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(160, 29);
-            this.textBox1.TabIndex = 16;
+            this.txtdiachi.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtdiachi.Location = new System.Drawing.Point(191, 199);
+            this.txtdiachi.Margin = new System.Windows.Forms.Padding(4);
+            this.txtdiachi.Name = "txtdiachi";
+            this.txtdiachi.Size = new System.Drawing.Size(160, 29);
+            this.txtdiachi.TabIndex = 16;
             // 
             // cbotrangthai
             // 
@@ -484,6 +495,7 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.dgvnhanvien);
+            this.panel4.Controls.Add(this.btndangxuat);
             this.panel4.Location = new System.Drawing.Point(412, 75);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
@@ -492,6 +504,7 @@
             // 
             // dgvnhanvien
             // 
+            this.dgvnhanvien.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.dgvnhanvien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvnhanvien.Location = new System.Drawing.Point(5, 34);
             this.dgvnhanvien.Margin = new System.Windows.Forms.Padding(4);
@@ -548,12 +561,102 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel12.Location = new System.Drawing.Point(0, -1);
+            this.panel12.Margin = new System.Windows.Forms.Padding(4);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(300, 16);
+            this.panel12.TabIndex = 29;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel10.Location = new System.Drawing.Point(11, 261);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(284, 12);
+            this.panel10.TabIndex = 22;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel6.Location = new System.Drawing.Point(285, -1);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(13, 674);
+            this.panel6.TabIndex = 26;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel9.Location = new System.Drawing.Point(1355, 81);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(13, 588);
+            this.panel9.TabIndex = 23;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel8.Location = new System.Drawing.Point(320, 660);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(1044, 12);
+            this.panel8.TabIndex = 27;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel7.Location = new System.Drawing.Point(320, 83);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(1044, 12);
+            this.panel7.TabIndex = 24;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel5.Location = new System.Drawing.Point(320, 83);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(13, 586);
+            this.panel5.TabIndex = 21;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel11.Location = new System.Drawing.Point(9, 657);
+            this.panel11.Margin = new System.Windows.Forms.Padding(4);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(289, 12);
+            this.panel11.TabIndex = 28;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel13.Location = new System.Drawing.Point(4, -1);
+            this.panel13.Margin = new System.Windows.Forms.Padding(4);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(13, 674);
+            this.panel13.TabIndex = 25;
+            // 
             // nhanvien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1368, 672);
+            this.Controls.Add(this.panel12);
+            this.Controls.Add(this.panel10);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel9);
+            this.Controls.Add(this.panel8);
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel11);
+            this.Controls.Add(this.panel13);
             this.Controls.Add(this.lbltimer);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label1);
@@ -613,7 +716,7 @@
         private System.Windows.Forms.Button btnthem;
         private System.Windows.Forms.Label lbldanhsachnv;
         private System.Windows.Forms.DataGridView dgvnhanvien;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtdiachi;
         private System.Windows.Forms.Button btnxoa;
         private System.Windows.Forms.Button btnsua;
         private System.Windows.Forms.Panel panel4;
@@ -623,5 +726,14 @@
         private System.Windows.Forms.Button btnquanlyban;
         private System.Windows.Forms.Button btnmenu;
         private System.Windows.Forms.Button btnnhanvien;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel panel13;
     }
 }

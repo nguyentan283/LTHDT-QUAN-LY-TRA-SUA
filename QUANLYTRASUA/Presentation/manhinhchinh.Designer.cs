@@ -50,8 +50,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvHoaDon = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btntongdt = new System.Windows.Forms.Button();
+            this.btntaodonmoi = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lbltimer = new System.Windows.Forms.Label();
@@ -303,6 +303,7 @@
             // 
             // dgvHoaDon
             // 
+            this.dgvHoaDon.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.dgvHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvHoaDon.Location = new System.Drawing.Point(8, 38);
             this.dgvHoaDon.Margin = new System.Windows.Forms.Padding(4);
@@ -315,8 +316,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.panel2.Controls.Add(this.button9);
-            this.panel2.Controls.Add(this.button7);
+            this.panel2.Controls.Add(this.btntongdt);
+            this.panel2.Controls.Add(this.btntaodonmoi);
             this.panel2.Controls.Add(this.btndangxuat);
             this.panel2.Location = new System.Drawing.Point(1104, 118);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
@@ -324,29 +325,29 @@
             this.panel2.Size = new System.Drawing.Size(248, 539);
             this.panel2.TabIndex = 12;
             // 
-            // button9
+            // btntongdt
             // 
-            this.button9.BackgroundImage = global::WindowsFormsApp1.Properties.Resources._7e04c7b1858504db5d94;
-            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button9.Location = new System.Drawing.Point(28, 302);
-            this.button9.Margin = new System.Windows.Forms.Padding(4);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(195, 172);
-            this.button9.TabIndex = 11;
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.btntongdt.BackgroundImage = global::WindowsFormsApp1.Properties.Resources._7e04c7b1858504db5d94;
+            this.btntongdt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btntongdt.Location = new System.Drawing.Point(28, 302);
+            this.btntongdt.Margin = new System.Windows.Forms.Padding(4);
+            this.btntongdt.Name = "btntongdt";
+            this.btntongdt.Size = new System.Drawing.Size(195, 172);
+            this.btntongdt.TabIndex = 11;
+            this.btntongdt.UseVisualStyleBackColor = true;
+            this.btntongdt.Click += new System.EventHandler(this.btntongdt_Click);
             // 
-            // button7
+            // btntaodonmoi
             // 
-            this.button7.BackgroundImage = global::WindowsFormsApp1.Properties.Resources._98acf1dfb0eb31b568fa;
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button7.Location = new System.Drawing.Point(28, 87);
-            this.button7.Margin = new System.Windows.Forms.Padding(4);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(195, 172);
-            this.button7.TabIndex = 9;
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.btntaodonmoi.BackgroundImage = global::WindowsFormsApp1.Properties.Resources._98acf1dfb0eb31b568fa;
+            this.btntaodonmoi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btntaodonmoi.Location = new System.Drawing.Point(28, 87);
+            this.btntaodonmoi.Margin = new System.Windows.Forms.Padding(4);
+            this.btntaodonmoi.Name = "btntaodonmoi";
+            this.btntaodonmoi.Size = new System.Drawing.Size(195, 172);
+            this.btntaodonmoi.TabIndex = 9;
+            this.btntaodonmoi.UseVisualStyleBackColor = true;
+            this.btntaodonmoi.Click += new System.EventHandler(this.btntaodonmoi_Click);
             // 
             // panel3
             // 
@@ -501,8 +502,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dgvHoaDon;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btntaodonmoi;
+        private System.Windows.Forms.Button btntongdt;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox4;
